@@ -2,7 +2,7 @@
 var STRINGS = {
  "en": {
   "enter_code": "Enter this code in VI Translator on your PC",
-  "where_on_pc": "On the PC: Source › Show on a TV › Connect a TV",
+  "where_on_pc": "On the PC: Show on › Connect a TV",
   "this_tv": "This TV: %1$s",
   "connected_to": "Connected to %1$s",
   "looking_for": "Looking for %1$s…",
@@ -16,7 +16,7 @@ var STRINGS = {
  },
  "ar": {
   "enter_code": "أدخل هذا الرمز في VI Translator على جهاز الكمبيوتر",
-  "where_on_pc": "على الكمبيوتر: المصدر › العرض على التلفاز › ربط تلفاز",
+  "where_on_pc": "على الكمبيوتر: العرض على › ربط تلفاز",
   "this_tv": "هذا التلفاز: %1$s",
   "connected_to": "متصل بـ %1$s",
   "looking_for": "جارٍ البحث عن %1$s…",
@@ -30,7 +30,7 @@ var STRINGS = {
  },
  "es-419": {
   "enter_code": "Escribe este código en VI Translator en tu PC",
-  "where_on_pc": "En la PC: Origen › Mostrar en una TV › Conectar una TV",
+  "where_on_pc": "En la PC: Mostrar en › Conectar una TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Buscando %1$s…",
@@ -44,7 +44,7 @@ var STRINGS = {
  },
  "zh-Hans": {
   "enter_code": "在电脑上的 VI Translator 中输入此代码",
-  "where_on_pc": "在电脑上: 来源 › 在电视上显示 › 连接电视",
+  "where_on_pc": "在电脑上: 显示位置 › 连接电视",
   "this_tv": "这台电视：%1$s",
   "connected_to": "已连接到 %1$s",
   "looking_for": "正在查找 %1$s…",
@@ -58,7 +58,7 @@ var STRINGS = {
  },
  "zh-Hant": {
   "enter_code": "在電腦上的 VI Translator 中輸入此代碼",
-  "where_on_pc": "在電腦上: 來源 › 在電視上顯示 › 連線電視",
+  "where_on_pc": "在電腦上: 顯示位置 › 連線電視",
   "this_tv": "這台電視：%1$s",
   "connected_to": "已連線到 %1$s",
   "looking_for": "正在尋找 %1$s…",
@@ -72,7 +72,7 @@ var STRINGS = {
  },
  "bn": {
   "enter_code": "আপনার পিসিতে VI Translator-এ এই কোডটি লিখুন",
-  "where_on_pc": "পিসিতে: উৎস › টিভিতে দেখান › একটি টিভি সংযুক্ত করুন",
+  "where_on_pc": "পিসিতে: যেখানে দেখাবে › একটি টিভি সংযুক্ত করুন",
   "this_tv": "এই টিভি: %1$s",
   "connected_to": "%1$s-এর সাথে সংযুক্ত",
   "looking_for": "%1$s খোঁজা হচ্ছে…",
@@ -86,7 +86,7 @@ var STRINGS = {
  },
  "cs": {
   "enter_code": "Zadejte tento kód ve VI Translator na počítači",
-  "where_on_pc": "V počítači: Zdroj › Zobrazit na televizi › Připojit televizi",
+  "where_on_pc": "V počítači: Zobrazit na › Připojit televizi",
   "this_tv": "Tato televize: %1$s",
   "connected_to": "Připojeno k %1$s",
   "looking_for": "Hledá se %1$s…",
@@ -100,7 +100,7 @@ var STRINGS = {
  },
  "de": {
   "enter_code": "Gib diesen Code in VI Translator auf deinem PC ein",
-  "where_on_pc": "Auf dem PC: Quelle › Auf einem Fernseher zeigen › Fernseher verbinden",
+  "where_on_pc": "Auf dem PC: Anzeigen auf › Fernseher verbinden",
   "this_tv": "Dieser Fernseher: %1$s",
   "connected_to": "Verbunden mit %1$s",
   "looking_for": "Suche %1$s…",
@@ -114,7 +114,7 @@ var STRINGS = {
  },
  "el": {
   "enter_code": "Πληκτρολογήστε αυτόν τον κωδικό στο VI Translator στον υπολογιστή σας",
-  "where_on_pc": "Στον υπολογιστή: Πηγή › Προβολή σε τηλεόραση › Σύνδεση τηλεόρασης",
+  "where_on_pc": "Στον υπολογιστή: Προβολή σε › Σύνδεση τηλεόρασης",
   "this_tv": "Αυτή η τηλεόραση: %1$s",
   "connected_to": "Συνδέθηκε με %1$s",
   "looking_for": "Αναζήτηση %1$s…",
@@ -128,7 +128,7 @@ var STRINGS = {
  },
  "es": {
   "enter_code": "Introduce este código en VI Translator en tu PC",
-  "where_on_pc": "En el PC: Origen › Mostrar en una tele › Conectar una tele",
+  "where_on_pc": "En el PC: Mostrar en › Conectar una tele",
   "this_tv": "Esta tele: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Buscando %1$s…",
@@ -142,7 +142,7 @@ var STRINGS = {
  },
  "es-MX": {
   "enter_code": "Escribe este código en VI Translator en tu PC",
-  "where_on_pc": "En la PC: Origen › Mostrar en una TV › Conectar una TV",
+  "where_on_pc": "En la PC: Mostrar en › Conectar una TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Buscando %1$s…",
@@ -156,7 +156,7 @@ var STRINGS = {
  },
  "fa": {
   "enter_code": "این کد را در VI Translator روی رایانه وارد کنید",
-  "where_on_pc": "روی رایانه: منبع › نمایش روی تلویزیون › اتصال یک تلویزیون",
+  "where_on_pc": "روی رایانه: نمایش روی › اتصال یک تلویزیون",
   "this_tv": "این تلویزیون: %1$s",
   "connected_to": "متصل به %1$s",
   "looking_for": "در حال جستجوی %1$s…",
@@ -170,7 +170,7 @@ var STRINGS = {
  },
  "fil": {
   "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC",
-  "where_on_pc": "Sa PC: Source › Ipakita sa TV › Magkonekta ng TV",
+  "where_on_pc": "Sa PC: Ipakita sa › Magkonekta ng TV",
   "this_tv": "Ang TV na ito: %1$s",
   "connected_to": "Nakakonekta sa %1$s",
   "looking_for": "Hinahanap ang %1$s…",
@@ -184,7 +184,7 @@ var STRINGS = {
  },
  "fr": {
   "enter_code": "Saisissez ce code dans VI Translator sur votre PC",
-  "where_on_pc": "Sur le PC: Source › Afficher sur une TV › Connecter une TV",
+  "where_on_pc": "Sur le PC: Afficher sur › Connecter une TV",
   "this_tv": "Cette TV : %1$s",
   "connected_to": "Connecté à %1$s",
   "looking_for": "Recherche de %1$s…",
@@ -198,7 +198,7 @@ var STRINGS = {
  },
  "hi": {
   "enter_code": "अपने पीसी पर VI Translator में यह कोड डालें",
-  "where_on_pc": "पीसी पर: स्रोत › टीवी पर दिखाएँ › टीवी जोड़ें",
+  "where_on_pc": "पीसी पर: यहाँ दिखाएँ › टीवी जोड़ें",
   "this_tv": "यह टीवी: %1$s",
   "connected_to": "%1$s से जुड़ा है",
   "looking_for": "%1$s खोजा जा रहा है…",
@@ -212,7 +212,7 @@ var STRINGS = {
  },
  "id": {
   "enter_code": "Masukkan kode ini di VI Translator di PC Anda",
-  "where_on_pc": "Di PC: Sumber › Tampilkan di TV › Hubungkan TV",
+  "where_on_pc": "Di PC: Tampilkan di › Hubungkan TV",
   "this_tv": "TV ini: %1$s",
   "connected_to": "Terhubung ke %1$s",
   "looking_for": "Mencari %1$s…",
@@ -226,7 +226,7 @@ var STRINGS = {
  },
  "it": {
   "enter_code": "Inserisci questo codice in VI Translator sul PC",
-  "where_on_pc": "Sul PC: Sorgente › Mostra su una TV › Collega una TV",
+  "where_on_pc": "Sul PC: Mostra su › Collega una TV",
   "this_tv": "Questa TV: %1$s",
   "connected_to": "Collegato a %1$s",
   "looking_for": "Ricerca di %1$s…",
@@ -240,7 +240,7 @@ var STRINGS = {
  },
  "ja": {
   "enter_code": "PC の VI Translator にこのコードを入力してください",
-  "where_on_pc": "PC で: ソース › テレビに表示 › テレビを接続",
+  "where_on_pc": "PC で: 表示先 › テレビを接続",
   "this_tv": "このテレビ: %1$s",
   "connected_to": "%1$s に接続しました",
   "looking_for": "%1$s を探しています…",
@@ -254,7 +254,7 @@ var STRINGS = {
  },
  "ko": {
   "enter_code": "PC의 VI Translator에 이 코드를 입력하세요",
-  "where_on_pc": "PC에서: 소스 › TV에 표시 › TV 연결",
+  "where_on_pc": "PC에서: 표시 위치 › TV 연결",
   "this_tv": "이 TV: %1$s",
   "connected_to": "%1$s에 연결됨",
   "looking_for": "%1$s 찾는 중…",
@@ -268,7 +268,7 @@ var STRINGS = {
  },
  "mr": {
   "enter_code": "तुमच्या पीसीवरील VI Translator मध्ये हा कोड टाका",
-  "where_on_pc": "पीसीवर: स्रोत › टीव्हीवर दाखवा › टीव्ही जोडा",
+  "where_on_pc": "पीसीवर: इथे दाखवा › टीव्ही जोडा",
   "this_tv": "हा टीव्ही: %1$s",
   "connected_to": "%1$s शी जोडले",
   "looking_for": "%1$s शोधत आहे…",
@@ -282,7 +282,7 @@ var STRINGS = {
  },
  "ms": {
   "enter_code": "Masukkan kod ini dalam VI Translator pada PC anda",
-  "where_on_pc": "Pada PC: Sumber › Tunjukkan pada TV › Sambungkan TV",
+  "where_on_pc": "Pada PC: Papar pada › Sambungkan TV",
   "this_tv": "TV ini: %1$s",
   "connected_to": "Disambungkan ke %1$s",
   "looking_for": "Mencari %1$s…",
@@ -296,7 +296,7 @@ var STRINGS = {
  },
  "nl": {
   "enter_code": "Voer deze code in bij VI Translator op je pc",
-  "where_on_pc": "Op de pc: Bron › Op een tv tonen › Tv koppelen",
+  "where_on_pc": "Op de pc: Tonen op › Tv koppelen",
   "this_tv": "Deze tv: %1$s",
   "connected_to": "Gekoppeld aan %1$s",
   "looking_for": "%1$s zoeken…",
@@ -310,7 +310,7 @@ var STRINGS = {
  },
  "pl": {
   "enter_code": "Wpisz ten kod w VI Translator na komputerze",
-  "where_on_pc": "Na komputerze: Źródło › Pokaż na telewizorze › Połącz telewizor",
+  "where_on_pc": "Na komputerze: Pokaż na › Połącz telewizor",
   "this_tv": "Ten telewizor: %1$s",
   "connected_to": "Połączono z %1$s",
   "looking_for": "Szukanie %1$s…",
@@ -324,7 +324,7 @@ var STRINGS = {
  },
  "pt": {
   "enter_code": "Digite este código no VI Translator no seu PC",
-  "where_on_pc": "No PC: Origem › Mostrar em uma TV › Conectar uma TV",
+  "where_on_pc": "No PC: Mostrar em › Conectar uma TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Procurando %1$s…",
@@ -338,7 +338,7 @@ var STRINGS = {
  },
  "pt-BR": {
   "enter_code": "Digite este código no VI Translator no seu PC",
-  "where_on_pc": "No PC: Origem › Mostrar em uma TV › Conectar uma TV",
+  "where_on_pc": "No PC: Mostrar em › Conectar uma TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Procurando %1$s…",
@@ -352,7 +352,7 @@ var STRINGS = {
  },
  "ro": {
   "enter_code": "Introdu acest cod în VI Translator pe PC",
-  "where_on_pc": "Pe PC: Sursă › Afișează pe un televizor › Conectează un televizor",
+  "where_on_pc": "Pe PC: Afișare pe › Conectează un televizor",
   "this_tv": "Acest televizor: %1$s",
   "connected_to": "Conectat la %1$s",
   "looking_for": "Se caută %1$s…",
@@ -366,7 +366,7 @@ var STRINGS = {
  },
  "ru": {
   "enter_code": "Введите этот код в VI Translator на ПК",
-  "where_on_pc": "На ПК: Источник › Показать на телевизоре › Подключить телевизор",
+  "where_on_pc": "На ПК: Показ на › Подключить телевизор",
   "this_tv": "Этот телевизор: %1$s",
   "connected_to": "Подключено к %1$s",
   "looking_for": "Поиск %1$s…",
@@ -380,7 +380,7 @@ var STRINGS = {
  },
  "sw": {
   "enter_code": "Weka msimbo huu katika VI Translator kwenye kompyuta yako",
-  "where_on_pc": "Kwenye kompyuta: Chanzo › Onyesha kwenye TV › Unganisha TV",
+  "where_on_pc": "Kwenye kompyuta: Onyesha kwenye › Unganisha TV",
   "this_tv": "TV hii: %1$s",
   "connected_to": "Imeunganishwa na %1$s",
   "looking_for": "Inatafuta %1$s…",
@@ -394,7 +394,7 @@ var STRINGS = {
  },
  "ta": {
   "enter_code": "உங்கள் கணினியில் VI Translator-இல் இந்தக் குறியீட்டை உள்ளிடவும்",
-  "where_on_pc": "கணினியில்: மூலம் › டிவியில் காட்டு › டிவியை இணை",
+  "where_on_pc": "கணினியில்: காட்டும் இடம் › டிவியை இணை",
   "this_tv": "இந்த டிவி: %1$s",
   "connected_to": "%1$s உடன் இணைந்தது",
   "looking_for": "%1$s தேடப்படுகிறது…",
@@ -408,7 +408,7 @@ var STRINGS = {
  },
  "te": {
   "enter_code": "మీ PCలో VI Translatorలో ఈ కోడ్‌ను నమోదు చేయండి",
-  "where_on_pc": "PCలో: మూలం › టీవీలో చూపించు › టీవీని కనెక్ట్ చేయండి",
+  "where_on_pc": "PCలో: చూపే చోటు › టీవీని కనెక్ట్ చేయండి",
   "this_tv": "ఈ టీవీ: %1$s",
   "connected_to": "%1$sకి కనెక్ట్ అయింది",
   "looking_for": "%1$s కోసం వెతుకుతోంది…",
@@ -422,7 +422,7 @@ var STRINGS = {
  },
  "th": {
   "enter_code": "ใส่รหัสนี้ใน VI Translator บนพีซีของคุณ",
-  "where_on_pc": "บนพีซี: แหล่งภาพ › แสดงบนทีวี › เชื่อมต่อทีวี",
+  "where_on_pc": "บนพีซี: แสดงบน › เชื่อมต่อทีวี",
   "this_tv": "ทีวีเครื่องนี้: %1$s",
   "connected_to": "เชื่อมต่อกับ %1$s แล้ว",
   "looking_for": "กำลังค้นหา %1$s…",
@@ -436,7 +436,7 @@ var STRINGS = {
  },
  "tl": {
   "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC",
-  "where_on_pc": "Sa PC: Source › Ipakita sa TV › Magkonekta ng TV",
+  "where_on_pc": "Sa PC: Ipakita sa › Magkonekta ng TV",
   "this_tv": "Ang TV na ito: %1$s",
   "connected_to": "Nakakonekta sa %1$s",
   "looking_for": "Hinahanap ang %1$s…",
@@ -450,7 +450,7 @@ var STRINGS = {
  },
  "tr": {
   "enter_code": "Bu kodu bilgisayarınızdaki VI Translator'a girin",
-  "where_on_pc": "Bilgisayarda: Kaynak › Televizyonda göster › Televizyon bağla",
+  "where_on_pc": "Bilgisayarda: Şurada göster › Televizyon bağla",
   "this_tv": "Bu televizyon: %1$s",
   "connected_to": "%1$s cihazına bağlandı",
   "looking_for": "%1$s aranıyor…",
@@ -464,7 +464,7 @@ var STRINGS = {
  },
  "uk": {
   "enter_code": "Введіть цей код у VI Translator на ПК",
-  "where_on_pc": "На ПК: Джерело › Показати на телевізорі › Підключити телевізор",
+  "where_on_pc": "На ПК: Показ на › Підключити телевізор",
   "this_tv": "Цей телевізор: %1$s",
   "connected_to": "Підключено до %1$s",
   "looking_for": "Пошук %1$s…",
@@ -478,7 +478,7 @@ var STRINGS = {
  },
  "ur": {
   "enter_code": "اپنے پی سی پر VI Translator میں یہ کوڈ درج کریں",
-  "where_on_pc": "پی سی پر: سورس › ٹی وی پر دکھائیں › ٹی وی جوڑیں",
+  "where_on_pc": "پی سی پر: یہاں دکھائیں › ٹی وی جوڑیں",
   "this_tv": "یہ ٹی وی: %1$s",
   "connected_to": "%1$s سے جڑا ہے",
   "looking_for": "%1$s تلاش کیا جا رہا ہے…",
@@ -492,7 +492,7 @@ var STRINGS = {
  },
  "vi": {
   "enter_code": "Nhập mã này trong VI Translator trên PC",
-  "where_on_pc": "Trên PC: Nguồn › Hiển thị trên TV › Kết nối TV",
+  "where_on_pc": "Trên PC: Hiển thị trên › Kết nối TV",
   "this_tv": "TV này: %1$s",
   "connected_to": "Đã kết nối với %1$s",
   "looking_for": "Đang tìm %1$s…",
@@ -506,7 +506,7 @@ var STRINGS = {
  },
  "zh-CN": {
   "enter_code": "在电脑上的 VI Translator 中输入此代码",
-  "where_on_pc": "在电脑上: 来源 › 在电视上显示 › 连接电视",
+  "where_on_pc": "在电脑上: 显示位置 › 连接电视",
   "this_tv": "这台电视：%1$s",
   "connected_to": "已连接到 %1$s",
   "looking_for": "正在查找 %1$s…",
@@ -520,7 +520,7 @@ var STRINGS = {
  },
  "zh-HK": {
   "enter_code": "在電腦上的 VI Translator 中輸入此代碼",
-  "where_on_pc": "在電腦上: 來源 › 在電視上顯示 › 連線電視",
+  "where_on_pc": "在電腦上: 顯示位置 › 連線電視",
   "this_tv": "這台電視：%1$s",
   "connected_to": "已連線到 %1$s",
   "looking_for": "正在尋找 %1$s…",
@@ -534,7 +534,7 @@ var STRINGS = {
  },
  "zh-TW": {
   "enter_code": "在電腦上的 VI Translator 中輸入此代碼",
-  "where_on_pc": "在電腦上: 來源 › 在電視上顯示 › 連線電視",
+  "where_on_pc": "在電腦上: 顯示位置 › 連線電視",
   "this_tv": "這台電視：%1$s",
   "connected_to": "已連線到 %1$s",
   "looking_for": "正在尋找 %1$s…",

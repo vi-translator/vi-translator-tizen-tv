@@ -29,7 +29,7 @@ to the console's input. The app shows the picture only while it's open.
 
 1. **Install the app on the TV:** see *Install on a TV* below. It's not in the Samsung store.
 2. **Open it:** it shows a 6-digit code.
-3. **On the PC:** in VI Translator, *Source* tab, *Show on a TV*, *Connect a TV*. Type the code and
+3. **On the PC:** in VI Translator, *Show on* tab, *Connect a TV*. Type the code and
    press *Connect*. The TV finds the PC by itself: it shows up in the list on the PC within about
    20 seconds.
 

@@ -39,7 +39,7 @@ privilege needs partner level on the TV models you target.
 > come from the free VI Translator app on a Windows, macOS or Linux PC on the same network
 > (https://github.com/vi-translator/vi-translator-desktop/releases). To test:
 > 1. Open the app: it shows a 6-digit code.
-> 2. On the PC, start VI Translator, open *Source → Show on a TV → Connect a TV*, type the code, press
+> 2. On the PC, start VI Translator, open *Show on → Connect a TV*, type the code, press
 >    *Connect*. The TV appears on the PC within about 20 seconds.
 > 3. The app shows the console's HDMI input full screen, with the translations of the English subtitles
 >    on top. Press OK for the menu: *Input*, *Language*, *Disconnect*. Back closes the menu, or the app.
