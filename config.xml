@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://github.com/Eng-Fouad/vi-translator-tizen-tv" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="VITransTV1.VITranslator" package="VITransTV1" required_version="4.0"/>
+    <tizen:profile name="tv-samsung"/>
+    <content src="index.html"/>
+    <icon src="icon.png"/>
+    <name>VI Translator</name>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+
+    <!-- the PC app on the home network: its TV page (in a frame) and its answers -->
+    <access origin="*" subdomains="true"/>
+    <tizen:allow-navigation>*</tizen:allow-navigation>
+
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <!-- the HDMI input's picture, behind the translations -->
+    <tizen:privilege name="http://tizen.org/privilege/tv.window"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <!-- this TV's address on the home network (to find the PC), and its model (its name there) -->
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+    <tizen:privilege name="http://tizen.org/privilege/system"/>
+
+    <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
