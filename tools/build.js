@@ -31,7 +31,10 @@ const home = process.env.TIZEN_STUDIO || (win ? "C:\\tizen-studio" : path.join(r
 let cli = path.join(home, "tools", "ide", "bin", win ? "tizen.bat" : "tizen");
 if (!fs.existsSync(cli)) cli = win ? "tizen.bat" : "tizen";
 
-execFileSync(cli, ["package", "-t", "wgt", "-s", profile, "--", out], { stdio: "inherit", shell: win });
+const args = ["package", "-t", "wgt", "-s", profile, "--", out];
+// (a .bat runs only through cmd)
+if (win) execFileSync("cmd.exe", ["/d", "/c", cli, ...args], { stdio: "inherit" });
+else execFileSync(cli, args, { stdio: "inherit" });
 const wgt = fs.readdirSync(out).find((f) => f.endsWith(".wgt"));
 if (!wgt) throw new Error("no .wgt made");
 fs.renameSync(path.join(out, wgt), path.join(root, "build", "VITranslator.wgt"));

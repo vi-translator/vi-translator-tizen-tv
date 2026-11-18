@@ -8,6 +8,8 @@ var STRINGS = {
   "looking_for": "Looking for %1$s…",
   "overlays_off": "Connected to %1$s, but its overlays are off",
   "disconnect": "Disconnect",
+  "language": "App language",
+  "language_tv": "TV language",
   "input": "Input: %1$s",
   "menu_hint": "Press OK for the menu",
   "no_hdmi": "No HDMI input is connected"
@@ -20,6 +22,8 @@ var STRINGS = {
   "looking_for": "جارٍ البحث عن %1$s…",
   "overlays_off": "متصل بـ %1$s، لكن الترجمة على اللعبة مُطفأة فيه",
   "disconnect": "قطع الاتصال",
+  "language": "لغة التطبيق",
+  "language_tv": "لغة التلفاز",
   "input": "المدخل: %1$s",
   "menu_hint": "اضغط OK لفتح القائمة",
   "no_hdmi": "لا يوجد مدخل HDMI متصل"
@@ -32,6 +36,8 @@ var STRINGS = {
   "looking_for": "Buscando %1$s…",
   "overlays_off": "Conectado a %1$s, pero sus superposiciones están desactivadas",
   "disconnect": "Desconectar",
+  "language": "Idioma de la app",
+  "language_tv": "Idioma de la TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Presiona OK para ver el menú",
   "no_hdmi": "No hay ninguna entrada HDMI conectada"
@@ -44,6 +50,8 @@ var STRINGS = {
   "looking_for": "正在查找 %1$s…",
   "overlays_off": "已连接到 %1$s，但其叠加层已关闭",
   "disconnect": "断开连接",
+  "language": "界面语言",
+  "language_tv": "电视语言",
   "input": "输入源：%1$s",
   "menu_hint": "按 OK 打开菜单",
   "no_hdmi": "没有已连接的 HDMI 输入源"
@@ -56,6 +64,8 @@ var STRINGS = {
   "looking_for": "正在尋找 %1$s…",
   "overlays_off": "已連線到 %1$s，但其疊加層已關閉",
   "disconnect": "中斷連線",
+  "language": "介面語言",
+  "language_tv": "電視語言",
   "input": "輸入來源：%1$s",
   "menu_hint": "按 OK 開啟選單",
   "no_hdmi": "沒有已連接的 HDMI 輸入來源"
@@ -68,6 +78,8 @@ var STRINGS = {
   "looking_for": "%1$s খোঁজা হচ্ছে…",
   "overlays_off": "%1$s-এর সাথে সংযুক্ত, কিন্তু এর ওভারলে বন্ধ",
   "disconnect": "সংযোগ বিচ্ছিন্ন করুন",
+  "language": "অ্যাপের ভাষা",
+  "language_tv": "টিভির ভাষা",
   "input": "ইনপুট: %1$s",
   "menu_hint": "মেনুর জন্য OK চাপুন",
   "no_hdmi": "কোনো HDMI ইনপুট সংযুক্ত নেই"
@@ -80,6 +92,8 @@ var STRINGS = {
   "looking_for": "Hledá se %1$s…",
   "overlays_off": "Připojeno k %1$s, ale jeho překryvy jsou vypnuté",
   "disconnect": "Odpojit",
+  "language": "Jazyk aplikace",
+  "language_tv": "Jazyk televize",
   "input": "Vstup: %1$s",
   "menu_hint": "Stiskněte OK pro nabídku",
   "no_hdmi": "Není připojen žádný vstup HDMI"
@@ -92,6 +106,8 @@ var STRINGS = {
   "looking_for": "Suche %1$s…",
   "overlays_off": "Verbunden mit %1$s, aber seine Overlays sind aus",
   "disconnect": "Trennen",
+  "language": "App-Sprache",
+  "language_tv": "Sprache des Fernsehers",
   "input": "Eingang: %1$s",
   "menu_hint": "OK drücken für das Menü",
   "no_hdmi": "Kein HDMI-Eingang angeschlossen"
@@ -104,6 +120,8 @@ var STRINGS = {
   "looking_for": "Αναζήτηση %1$s…",
   "overlays_off": "Συνδέθηκε με %1$s, αλλά οι επικαλύψεις του είναι κλειστές",
   "disconnect": "Αποσύνδεση",
+  "language": "Γλώσσα εφαρμογής",
+  "language_tv": "Γλώσσα τηλεόρασης",
   "input": "Είσοδος: %1$s",
   "menu_hint": "Πατήστε OK για το μενού",
   "no_hdmi": "Δεν υπάρχει συνδεδεμένη είσοδος HDMI"
@@ -116,6 +134,8 @@ var STRINGS = {
   "looking_for": "Buscando %1$s…",
   "overlays_off": "Conectado a %1$s, pero sus superposiciones están desactivadas",
   "disconnect": "Desconectar",
+  "language": "Idioma de la aplicación",
+  "language_tv": "Idioma de la tele",
   "input": "Entrada: %1$s",
   "menu_hint": "Pulsa OK para ver el menú",
   "no_hdmi": "No hay ninguna entrada HDMI conectada"
@@ -128,6 +148,8 @@ var STRINGS = {
   "looking_for": "Buscando %1$s…",
   "overlays_off": "Conectado a %1$s, pero sus superposiciones están desactivadas",
   "disconnect": "Desconectar",
+  "language": "Idioma de la app",
+  "language_tv": "Idioma de la TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Presiona OK para ver el menú",
   "no_hdmi": "No hay ninguna entrada HDMI conectada"
@@ -140,6 +162,8 @@ var STRINGS = {
   "looking_for": "در حال جستجوی %1$s…",
   "overlays_off": "متصل به %1$s، اما همپوشانی‌هایش خاموش است",
   "disconnect": "قطع اتصال",
+  "language": "زبان برنامه",
+  "language_tv": "زبان تلویزیون",
   "input": "ورودی: %1$s",
   "menu_hint": "برای منو OK را بزنید",
   "no_hdmi": "هیچ ورودی HDMI وصل نیست"
@@ -152,6 +176,8 @@ var STRINGS = {
   "looking_for": "Hinahanap ang %1$s…",
   "overlays_off": "Nakakonekta sa %1$s, pero naka-off ang mga overlay nito",
   "disconnect": "Idiskonekta",
+  "language": "Wika ng app",
+  "language_tv": "Wika ng TV",
   "input": "Input: %1$s",
   "menu_hint": "Pindutin ang OK para sa menu",
   "no_hdmi": "Walang nakakonektang HDMI input"
@@ -164,6 +190,8 @@ var STRINGS = {
   "looking_for": "Recherche de %1$s…",
   "overlays_off": "Connecté à %1$s, mais ses superpositions sont désactivées",
   "disconnect": "Déconnecter",
+  "language": "Langue de l'application",
+  "language_tv": "Langue de la TV",
   "input": "Entrée : %1$s",
   "menu_hint": "Appuyez sur OK pour le menu",
   "no_hdmi": "Aucune entrée HDMI n’est branchée"
@@ -176,6 +204,8 @@ var STRINGS = {
   "looking_for": "%1$s खोजा जा रहा है…",
   "overlays_off": "%1$s से जुड़ा है, पर उसके ओवरले बंद हैं",
   "disconnect": "डिस्कनेक्ट करें",
+  "language": "ऐप की भाषा",
+  "language_tv": "टीवी की भाषा",
   "input": "इनपुट: %1$s",
   "menu_hint": "मेनू के लिए OK दबाएँ",
   "no_hdmi": "कोई HDMI इनपुट जुड़ा नहीं है"
@@ -188,6 +218,8 @@ var STRINGS = {
   "looking_for": "Mencari %1$s…",
   "overlays_off": "Terhubung ke %1$s, tetapi overlay-nya mati",
   "disconnect": "Putuskan",
+  "language": "Bahasa aplikasi",
+  "language_tv": "Bahasa TV",
   "input": "Input: %1$s",
   "menu_hint": "Tekan OK untuk menu",
   "no_hdmi": "Tidak ada input HDMI yang tersambung"
@@ -200,6 +232,8 @@ var STRINGS = {
   "looking_for": "Ricerca di %1$s…",
   "overlays_off": "Collegato a %1$s, ma le sue sovrapposizioni sono disattivate",
   "disconnect": "Scollega",
+  "language": "Lingua dell'app",
+  "language_tv": "Lingua della TV",
   "input": "Ingresso: %1$s",
   "menu_hint": "Premi OK per il menu",
   "no_hdmi": "Nessun ingresso HDMI collegato"
@@ -212,6 +246,8 @@ var STRINGS = {
   "looking_for": "%1$s を探しています…",
   "overlays_off": "%1$s に接続しましたが、オーバーレイがオフです",
   "disconnect": "接続を解除",
+  "language": "アプリの言語",
+  "language_tv": "テレビの言語",
   "input": "入力：%1$s",
   "menu_hint": "OK を押すとメニューが開きます",
   "no_hdmi": "接続された HDMI 入力がありません"
@@ -224,6 +260,8 @@ var STRINGS = {
   "looking_for": "%1$s 찾는 중…",
   "overlays_off": "%1$s에 연결되었지만 오버레이가 꺼져 있습니다",
   "disconnect": "연결 해제",
+  "language": "앱 언어",
+  "language_tv": "TV 언어",
   "input": "입력: %1$s",
   "menu_hint": "메뉴를 보려면 OK를 누르세요",
   "no_hdmi": "연결된 HDMI 입력이 없습니다"
@@ -236,6 +274,8 @@ var STRINGS = {
   "looking_for": "%1$s शोधत आहे…",
   "overlays_off": "%1$s शी जोडले, पण त्याचे ओव्हरले बंद आहेत",
   "disconnect": "डिस्कनेक्ट करा",
+  "language": "ॲपची भाषा",
+  "language_tv": "टीव्हीची भाषा",
   "input": "इनपुट: %1$s",
   "menu_hint": "मेनूसाठी OK दाबा",
   "no_hdmi": "कोणतेही HDMI इनपुट जोडलेले नाही"
@@ -248,6 +288,8 @@ var STRINGS = {
   "looking_for": "Mencari %1$s…",
   "overlays_off": "Disambungkan ke %1$s, tetapi tindanannya dimatikan",
   "disconnect": "Putuskan sambungan",
+  "language": "Bahasa aplikasi",
+  "language_tv": "Bahasa TV",
   "input": "Input: %1$s",
   "menu_hint": "Tekan OK untuk menu",
   "no_hdmi": "Tiada input HDMI disambungkan"
@@ -260,6 +302,8 @@ var STRINGS = {
   "looking_for": "%1$s zoeken…",
   "overlays_off": "Gekoppeld aan %1$s, maar de overlays staan uit",
   "disconnect": "Ontkoppelen",
+  "language": "App-taal",
+  "language_tv": "Taal van de tv",
   "input": "Ingang: %1$s",
   "menu_hint": "Druk op OK voor het menu",
   "no_hdmi": "Geen HDMI-ingang aangesloten"
@@ -272,6 +316,8 @@ var STRINGS = {
   "looking_for": "Szukanie %1$s…",
   "overlays_off": "Połączono z %1$s, ale jego nakładki są wyłączone",
   "disconnect": "Rozłącz",
+  "language": "Język aplikacji",
+  "language_tv": "Język telewizora",
   "input": "Wejście: %1$s",
   "menu_hint": "Naciśnij OK, aby otworzyć menu",
   "no_hdmi": "Brak podłączonego wejścia HDMI"
@@ -284,6 +330,8 @@ var STRINGS = {
   "looking_for": "Procurando %1$s…",
   "overlays_off": "Conectado a %1$s, mas as sobreposições estão desativadas",
   "disconnect": "Desconectar",
+  "language": "Idioma do app",
+  "language_tv": "Idioma da TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Prima OK para abrir o menu",
   "no_hdmi": "Nenhuma entrada HDMI ligada"
@@ -296,6 +344,8 @@ var STRINGS = {
   "looking_for": "Procurando %1$s…",
   "overlays_off": "Conectado a %1$s, mas as sobreposições estão desativadas",
   "disconnect": "Desconectar",
+  "language": "Idioma do app",
+  "language_tv": "Idioma da TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Pressione OK para abrir o menu",
   "no_hdmi": "Nenhuma entrada HDMI conectada"
@@ -308,6 +358,8 @@ var STRINGS = {
   "looking_for": "Se caută %1$s…",
   "overlays_off": "Conectat la %1$s, dar suprapunerile lui sunt oprite",
   "disconnect": "Deconectează",
+  "language": "Limba aplicației",
+  "language_tv": "Limba televizorului",
   "input": "Intrare: %1$s",
   "menu_hint": "Apăsați OK pentru meniu",
   "no_hdmi": "Nicio intrare HDMI conectată"
@@ -320,6 +372,8 @@ var STRINGS = {
   "looking_for": "Поиск %1$s…",
   "overlays_off": "Подключено к %1$s, но его наложения выключены",
   "disconnect": "Отключить",
+  "language": "Язык приложения",
+  "language_tv": "Язык телевизора",
   "input": "Вход: %1$s",
   "menu_hint": "Нажмите OK, чтобы открыть меню",
   "no_hdmi": "Нет подключённых входов HDMI"
@@ -332,6 +386,8 @@ var STRINGS = {
   "looking_for": "Inatafuta %1$s…",
   "overlays_off": "Imeunganishwa na %1$s, lakini tabaka zake zimezimwa",
   "disconnect": "Tenganisha",
+  "language": "Lugha ya programu",
+  "language_tv": "Lugha ya TV",
   "input": "Ingizo: %1$s",
   "menu_hint": "Bonyeza OK kwa menyu",
   "no_hdmi": "Hakuna ingizo la HDMI lililounganishwa"
@@ -344,6 +400,8 @@ var STRINGS = {
   "looking_for": "%1$s தேடப்படுகிறது…",
   "overlays_off": "%1$s உடன் இணைந்தது, ஆனால் அதன் மேலடுக்குகள் முடக்கப்பட்டுள்ளன",
   "disconnect": "துண்டி",
+  "language": "செயலியின் மொழி",
+  "language_tv": "டிவியின் மொழி",
   "input": "உள்ளீடு: %1$s",
   "menu_hint": "மெனுவுக்கு OK அழுத்தவும்",
   "no_hdmi": "HDMI உள்ளீடு எதுவும் இணைக்கப்படவில்லை"
@@ -356,6 +414,8 @@ var STRINGS = {
   "looking_for": "%1$s కోసం వెతుకుతోంది…",
   "overlays_off": "%1$sకి కనెక్ట్ అయింది, కానీ దాని ఓవర్‌లేలు ఆఫ్‌లో ఉన్నాయి",
   "disconnect": "డిస్‌కనెక్ట్ చేయి",
+  "language": "యాప్ భాష",
+  "language_tv": "టీవీ భాష",
   "input": "ఇన్‌పుట్: %1$s",
   "menu_hint": "మెనూ కోసం OK నొక్కండి",
   "no_hdmi": "HDMI ఇన్‌పుట్ ఏదీ కనెక్ట్ కాలేదు"
@@ -368,6 +428,8 @@ var STRINGS = {
   "looking_for": "กำลังค้นหา %1$s…",
   "overlays_off": "เชื่อมต่อกับ %1$s แล้ว แต่โอเวอร์เลย์ของมันปิดอยู่",
   "disconnect": "ยกเลิกการเชื่อมต่อ",
+  "language": "ภาษาของแอป",
+  "language_tv": "ภาษาของทีวี",
   "input": "อินพุต: %1$s",
   "menu_hint": "กด OK เพื่อเปิดเมนู",
   "no_hdmi": "ไม่มีอินพุต HDMI ที่เชื่อมต่อ"
@@ -380,6 +442,8 @@ var STRINGS = {
   "looking_for": "Hinahanap ang %1$s…",
   "overlays_off": "Nakakonekta sa %1$s, pero naka-off ang mga overlay nito",
   "disconnect": "Idiskonekta",
+  "language": "Wika ng app",
+  "language_tv": "Wika ng TV",
   "input": "Input: %1$s",
   "menu_hint": "Pindutin ang OK para sa menu",
   "no_hdmi": "Walang nakakonektang HDMI input"
@@ -392,6 +456,8 @@ var STRINGS = {
   "looking_for": "%1$s aranıyor…",
   "overlays_off": "%1$s cihazına bağlandı, ancak katmanları kapalı",
   "disconnect": "Bağlantıyı kes",
+  "language": "Uygulama dili",
+  "language_tv": "Televizyonun dili",
   "input": "Giriş: %1$s",
   "menu_hint": "Menü için OK tuşuna basın",
   "no_hdmi": "Bağlı HDMI girişi yok"
@@ -404,6 +470,8 @@ var STRINGS = {
   "looking_for": "Пошук %1$s…",
   "overlays_off": "Підключено до %1$s, але його накладання вимкнені",
   "disconnect": "Від'єднати",
+  "language": "Мова застосунку",
+  "language_tv": "Мова телевізора",
   "input": "Вхід: %1$s",
   "menu_hint": "Натисніть OK, щоб відкрити меню",
   "no_hdmi": "Немає підключених входів HDMI"
@@ -416,6 +484,8 @@ var STRINGS = {
   "looking_for": "%1$s تلاش کیا جا رہا ہے…",
   "overlays_off": "%1$s سے جڑا ہے، لیکن اس کے اوورلے بند ہیں",
   "disconnect": "منقطع کریں",
+  "language": "ایپ کی زبان",
+  "language_tv": "ٹی وی کی زبان",
   "input": "ان پٹ: %1$s",
   "menu_hint": "مینو کے لیے OK دبائیں",
   "no_hdmi": "کوئی HDMI ان پٹ منسلک نہیں"
@@ -428,6 +498,8 @@ var STRINGS = {
   "looking_for": "Đang tìm %1$s…",
   "overlays_off": "Đã kết nối với %1$s, nhưng lớp phủ của nó đang tắt",
   "disconnect": "Ngắt kết nối",
+  "language": "Ngôn ngữ ứng dụng",
+  "language_tv": "Ngôn ngữ của TV",
   "input": "Đầu vào: %1$s",
   "menu_hint": "Nhấn OK để mở menu",
   "no_hdmi": "Không có đầu vào HDMI nào được kết nối"
@@ -440,6 +512,8 @@ var STRINGS = {
   "looking_for": "正在查找 %1$s…",
   "overlays_off": "已连接到 %1$s，但其叠加层已关闭",
   "disconnect": "断开连接",
+  "language": "界面语言",
+  "language_tv": "电视语言",
   "input": "输入源：%1$s",
   "menu_hint": "按 OK 打开菜单",
   "no_hdmi": "没有已连接的 HDMI 输入源"
@@ -452,6 +526,8 @@ var STRINGS = {
   "looking_for": "正在尋找 %1$s…",
   "overlays_off": "已連線到 %1$s，但其疊加層已關閉",
   "disconnect": "中斷連線",
+  "language": "介面語言",
+  "language_tv": "電視語言",
   "input": "輸入來源：%1$s",
   "menu_hint": "按 OK 開啟選單",
   "no_hdmi": "沒有已連接的 HDMI 輸入來源"
@@ -464,6 +540,8 @@ var STRINGS = {
   "looking_for": "正在尋找 %1$s…",
   "overlays_off": "已連線到 %1$s，但其疊加層已關閉",
   "disconnect": "中斷連線",
+  "language": "介面語言",
+  "language_tv": "電視語言",
   "input": "輸入來源：%1$s",
   "menu_hint": "按 OK 開啟選單",
   "no_hdmi": "沒有已連接的 HDMI 輸入來源"

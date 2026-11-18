@@ -18,7 +18,7 @@ const res = path.join(android, "app", "src", "main", "res");
 const root = path.join(__dirname, "..");
 
 // the Android strings this app uses
-const USED = ["enter_code", "where_on_pc", "this_tv", "connected_to", "looking_for", "overlays_off", "disconnect"];
+const USED = ["enter_code", "where_on_pc", "this_tv", "connected_to", "looking_for", "overlays_off", "disconnect", "language", "language_tv"];
 // Android folder name -> language tag
 function tag(dir) {
   if (dir === "values") return "en";

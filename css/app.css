@@ -194,6 +194,77 @@ body {
   transform: scale(1.06);
 }
 
+/* the language button: compact, a globe and the language in use */
+.lang-button {
+  display: flex;
+  align-items: center;
+}
+.lang-button svg {
+  width: 30px;
+  height: 30px;
+  -webkit-margin-end: 14px;
+  margin-inline-end: 14px;
+  flex: none;
+}
+.corner {
+  position: fixed;
+  top: 40px;
+  right: 56px;
+  height: 66px;
+  padding: 0 32px;
+  font-size: 22px;
+  margin: 0;
+}
+[dir="rtl"] .corner {
+  right: auto;
+  left: 56px;
+}
+
+/* the language list, in the middle of the screen */
+.picker {
+  bottom: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 30px 34px;
+  width: 640px;
+  z-index: 2;
+  background: #17111f;
+}
+.picker-title {
+  font-size: 32px;
+  font-weight: 650;
+  padding-bottom: 18px;
+}
+.list {
+  width: 100%;
+  max-height: 760px;
+  overflow-y: auto;
+  padding: 6px 12px;
+  box-sizing: border-box;
+}
+.item {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  height: 70px;
+  font-size: 28px;
+  text-align: start;
+  padding: 0 34px;
+  border-radius: 35px;
+  border-color: transparent;
+  background: transparent;
+}
+.item:focus {
+  transform: none;
+}
+.item.chosen {
+  color: var(--neon);
+  border-color: rgba(62, 240, 216, 0.5);
+}
+.item.chosen:focus {
+  color: #fff;
+}
+
 /* "Press OK for the menu", a moment after the game shows */
 .hint {
   position: fixed;

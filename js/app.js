@@ -35,9 +35,36 @@
 
   // ---------------------------------------------------------------- strings
 
-  // (?lang=ar: another language, to try the app in a browser)
-  var lang = pickLanguage(/[?&]lang=([^&]+)/.test(location.search) ? RegExp.$1 : navigator.language || "en");
-  var S = STRINGS[lang] || STRINGS.en;
+  /** The desktop app's interface languages, in its order: the strings' tag, and the name in itself. */
+  var LANGUAGES = [
+    ["en", "English"], ["ar", "العربية"], ["hi", "हिन्दी"], ["bn", "বাংলা"], ["ur", "اردو"],
+    ["id", "Bahasa Indonesia"], ["tr", "Türkçe"], ["vi", "Tiếng Việt"], ["fa", "فارسی"], ["th", "ไทย"],
+    ["ta", "தமிழ்"], ["te", "తెలుగు"], ["mr", "मराठी"], ["uk", "Українська"], ["nl", "Nederlands"],
+    ["fil", "Filipino"], ["ms", "Bahasa Melayu"], ["sw", "Kiswahili"], ["ro", "Română"], ["el", "Ελληνικά"],
+    ["cs", "Čeština"], ["fr", "Français"], ["it", "Italiano"], ["de", "Deutsch"], ["ru", "Русский"],
+    ["ja", "日本語"], ["pl", "Polski"], ["ko", "한국어"], ["zh-Hans", "简体中文"], ["zh-Hant", "繁體中文"],
+    ["es-MX", "Español (México)"], ["es", "Español (España)"], ["pt-BR", "Português (Brasil)"]
+  ];
+
+  var lang = "en";
+  var S = STRINGS.en;
+
+  /** The language picked in the app (saved as "language"), or the TV's own. */
+  function setLanguage() {
+    var chosen = chosenLanguage();
+    // (?lang=ar: another language, to try the app in a browser)
+    // (on a TV the web engine's language is the TV's menu language)
+    var tag = /[?&]lang=([^&]+)/.test(location.search) ? RegExp.$1 : chosen ? chosen[0] : navigator.language || "en";
+    lang = pickLanguage(tag);
+    S = STRINGS[lang] || STRINGS.en;
+  }
+
+  /** The chosen language's [tag, name], or null for the TV's own. */
+  function chosenLanguage() {
+    var tag = prefs.get("language");
+    for (var i = 0; i < LANGUAGES.length; i++) if (LANGUAGES[i][0] === tag) return LANGUAGES[i];
+    return null;
+  }
 
   /** The best of the app's languages for a tag ("pt-BR", "zh-TW", "es-AR", "en_US"). */
   function pickLanguage(tag) {
@@ -131,7 +158,8 @@
     } catch (e) {
       // (not on a TV)
     }
-    return m ? "Samsung " + m : "Samsung TV";
+    // (the emulator's model is "0")
+    return /[a-z]/i.test(m) ? "Samsung " + m : "Samsung TV";
   }
 
   /** This TV's IPv4 address on the home network, or "" (then cb). */
@@ -294,6 +322,10 @@
       if (last) waiting.pcs[last] = true;
       // (in a browser: tools/mock-pc.js, on the computer the app was opened from)
       if (!window.tizen && home(location.hostname)) waiting.pcs[address(/[?&]pc=([^&]+)/.test(location.search) ? decodeURIComponent(RegExp.$1) : location.hostname + ":" + PC_PORT)] = true;
+      // (the TV emulator is behind its own NAT, 10.0.2.x: the PC it runs on is 10.0.2.2)
+      ownAddress(function (ip) {
+        if (/^10\.0\.2\.\d+$/.test(ip)) waiting.pcs["10.0.2.2:" + PC_PORT] = true;
+      });
       waiting.offerAll();
       waiting.sweep();
     },
@@ -613,7 +645,7 @@
   var menu = {
     open: false,
     buttons: function () {
-      return [$("input"), $("disconnect")].filter(function (b) {
+      return [$("input"), $("menu-language"), $("disconnect")].filter(function (b) {
         return !b.classList.contains("hidden");
       });
     },
@@ -664,11 +696,93 @@
       if (a === $("input")) {
         tv.next();
         menu.refresh();
+      } else if (a === $("menu-language")) {
+        picker.show();
       } else if (a === $("disconnect")) {
         disconnect();
       }
     }
   };
+
+  // ---------------------------------------------------------------- the language list
+
+  var GLOBE =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.8 3.9 6 3.9 9.5S14.6 18.7 12 21.5M12 2.5C9.4 5.3 8.1 8.5 8.1 12s1.3 6.7 3.9 9.5"/></svg>';
+
+  /** The TV's own language first, then each of the desktop app's by its own name. Up/Down, OK, Back. */
+  var picker = {
+    open: false,
+    back: null, // the button to go back to
+
+    show: function () {
+      picker.open = true;
+      picker.back = document.activeElement;
+      $("languages-title").textContent = t("language");
+      var list = $("language-list");
+      list.innerHTML = "";
+      var now = prefs.get("language");
+      var all = [["", t("language_tv")]].concat(LANGUAGES);
+      var focus = null;
+      all.forEach(function (l) {
+        var b = document.createElement("button");
+        b.className = "button item";
+        // (each name in its own direction, all on the page's side)
+        var s = document.createElement("span");
+        s.textContent = l[1];
+        s.dir = "auto";
+        b.appendChild(s);
+        b.setAttribute("data-tag", l[0]);
+        if (l[0] === (chosenLanguage() ? now : "")) {
+          b.classList.add("chosen");
+          focus = b;
+        }
+        b.addEventListener("click", function () {
+          picker.pick(l[0]);
+        });
+        list.appendChild(b);
+      });
+      $("languages").classList.remove("hidden");
+      (focus || list.firstChild).focus();
+    },
+
+    hide: function () {
+      picker.open = false;
+      $("languages").classList.add("hidden");
+      if (picker.back && !picker.back.closest(".hidden")) picker.back.focus();
+      else focusDefault();
+    },
+
+    move: function (d) {
+      var items = $("language-list").children;
+      var i = Array.prototype.indexOf.call(items, document.activeElement);
+      i = Math.max(0, Math.min(items.length - 1, i + d));
+      items[i].focus();
+    },
+
+    pick: function (tag) {
+      prefs.set("language", tag);
+      picker.hide();
+      setLanguage();
+      texts();
+    }
+  };
+
+  /** The language button's text: a globe and the language in use. */
+  function languageLabel(b) {
+    var c = chosenLanguage();
+    b.innerHTML = GLOBE;
+    var s = document.createElement("span");
+    s.textContent = c ? c[1] : t("language_tv");
+    s.dir = "auto";
+    b.appendChild(s);
+    b.setAttribute("aria-label", t("language"));
+  }
+
+  /** The waiting screen's only button, so OK works at once. */
+  function focusDefault() {
+    if (!prefs.connected()) $("language").focus();
+  }
 
   /** "Press OK for the menu", for a moment after the game shows. */
   var hint = {
@@ -712,6 +826,7 @@
       hint.hide();
       $("this-tv").textContent = t("this_tv", tvName());
       waiting.start();
+      focusDefault();
     }
   }
 
@@ -725,8 +840,20 @@
 
   document.addEventListener("keydown", function (e) {
     var k = e.keyCode;
+    if (picker.open) {
+      if (k === KEY.BACK || k === KEY.ESC) picker.hide();
+      else if (k === KEY.UP) picker.move(-1);
+      else if (k === KEY.DOWN) picker.move(1);
+      else if (k === KEY.ENTER) picker.pick(document.activeElement.getAttribute("data-tag") || "");
+      else return;
+      e.preventDefault();
+      return;
+    }
     if (!prefs.connected()) {
       if (k === KEY.BACK || k === KEY.ESC) exit();
+      else if (k === KEY.ENTER) picker.show();
+      else return;
+      e.preventDefault();
       return;
     }
     if (menu.open) {
@@ -755,12 +882,24 @@
     overlay.check();
   });
 
-  function init() {
+  /** Every text on screen, in the app's language. */
+  function texts() {
     document.documentElement.lang = lang;
     document.documentElement.dir = /^(ar|fa|ur|he)/.test(lang) ? "rtl" : "ltr";
     $("enter-code").textContent = t("enter_code");
     $("where").textContent = t("where_on_pc");
+    $("this-tv").textContent = t("this_tv", tvName());
     $("disconnect").textContent = t("disconnect");
+    languageLabel($("language"));
+    languageLabel($("menu-language"));
+    if (prefs.connected()) menu.refresh();
+  }
+
+  function init() {
+    setLanguage();
+    texts();
+    $("language").addEventListener("click", picker.show);
+    $("menu-language").addEventListener("click", picker.show);
     // clicks (the emulator's mouse) work like OK on the button
     $("input").addEventListener("click", function () {
       tv.next();

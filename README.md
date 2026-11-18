@@ -38,6 +38,8 @@ for the menu:
 
 - **Input:** which HDMI input the app shows (the console's). At first, the input the TV was on when
   the app was opened, or the first one connected.
+- **Language:** the app's language, the TV's own or one of VI Translator's 33. Also in the top
+  corner of the code screen (press **OK** there).
 - **Disconnect:** the TV forgets the PC and shows a new code. Removing the TV in VI Translator on
   the PC does the same.
 
