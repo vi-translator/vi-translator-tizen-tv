@@ -97,6 +97,41 @@ with the *TV Extensions* (Package Manager), and Node.js for the scripts.
    tizen install -n build/VITranslator.wgt -t <TV name from "sdb devices">
    ```
 
+### Releases
+
+Pushing a tag `vX.Y.Z` (newer than the latest release) builds `vi-translator-tizen-tv-X.Y.Z.wgt`
+and attaches it to a GitHub release (`.github/workflows/release.yml`). It's signed with your
+Samsung certificates, from four repository secrets:
+
+| Secret | What |
+| --- | --- |
+| `TIZEN_AUTHOR_P12` | the author certificate, `author.p12`, in base64 |
+| `TIZEN_AUTHOR_PASSWORD` | the password you gave it in Certificate Manager |
+| `TIZEN_DISTRIBUTOR_P12` | the distributor certificate, `distributor.p12`, in base64 |
+| `TIZEN_DISTRIBUTOR_PASSWORD` | the password you gave it in Certificate Manager |
+
+1. **Make the certificates** as in *Build* above: Certificate Manager, new *Samsung* profile, type
+   *TV*. You sign in with your Samsung account there, in Samsung's own window: that password is
+   never needed anywhere else. The two passwords above are the ones you choose for the
+   certificates in that wizard. The files end up in `~/SamsungCertificate/<profile name>/`.
+2. **Add the secrets** (with the [GitHub CLI](https://cli.github.com/), from that folder):
+
+   ```sh
+   base64 -w0 author.p12 | gh secret set TIZEN_AUTHOR_P12 -R vi-translator/vi-translator-tizen-tv
+   base64 -w0 distributor.p12 | gh secret set TIZEN_DISTRIBUTOR_P12 -R vi-translator/vi-translator-tizen-tv
+   gh secret set TIZEN_AUTHOR_PASSWORD -R vi-translator/vi-translator-tizen-tv        # asks for it
+   gh secret set TIZEN_DISTRIBUTOR_PASSWORD -R vi-translator/vi-translator-tizen-tv   # asks for it
+   ```
+
+   On Windows without `base64`, in PowerShell:
+   `[Convert]::ToBase64String([IO.File]::ReadAllBytes("author.p12")) | gh secret set TIZEN_AUTHOR_P12 -R vi-translator/vi-translator-tizen-tv`.
+
+A Samsung distributor certificate only lets the app on the TVs whose DUIDs it lists: a released
+`.wgt` installs on those TVs. Anyone else builds it with their own certificate (*Build* above).
+
+To try the release build on a computer with the Tizen Studio CLI, `tools/release.sh` does what the
+workflow does (its header says how).
+
 ### Try it in a browser
 
 ```sh

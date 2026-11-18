@@ -1,0 +1,128 @@
+# Pushing a tag vX.Y.Z releases version X.Y.Z of the app: vi-translator-tizen-tv-X.Y.Z.wgt, signed
+# for Samsung TVs with the certificates from Tizen Studio's Certificate Manager, attached to a GitHub
+# Release.
+#
+# Same tag rules as the desktop app: the tag must look like v1.2.3 and be newer than the latest
+# release.
+#
+# Repository secrets (how to make the certificates: "Releases" in the README):
+#   TIZEN_AUTHOR_P12            the author certificate, author.p12, in base64
+#   TIZEN_AUTHOR_PASSWORD       its password
+#   TIZEN_DISTRIBUTOR_P12       the Samsung distributor certificate, distributor.p12, in base64
+#   TIZEN_DISTRIBUTOR_PASSWORD  its password
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  # the Tizen Studio command line tools (6.1, Ubuntu), pinned by their SHA-256
+  TIZEN_CLI_URL: https://download.tizen.org/sdk/Installer/tizen-studio_6.1/web-cli_Tizen_Studio_6.1_ubuntu-64.bin
+  TIZEN_CLI_SHA256: 7f33fe09eda4eb5d50463cf997e8f676d455060720470070ae1932994413aaf4
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - name: Check the tag
+        id: v
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          if ! echo "$V" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::Tags must look like v1.2.3 (got $GITHUB_REF_NAME)"; exit 1
+          fi
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+
+      - name: Must be newer than the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          CUR=$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq .tagName 2>/dev/null || true)
+          CUR="${CUR#v}"
+          echo "latest release: ${CUR:-none}, tag: $V"
+          if [ -n "$CUR" ] && { [ "$CUR" = "$V" ] || [ "$(printf '%s\n%s\n' "$CUR" "$V" | sort -V | tail -n1)" != "$V" ]; }; then
+            echo "::error::$V is not newer than the latest release $CUR"; exit 1
+          fi
+
+  build:
+    needs: check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      VERSION: ${{ needs.check.outputs.version }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: The secrets are there
+        env:
+          A: ${{ secrets.TIZEN_AUTHOR_P12 }}
+          AP: ${{ secrets.TIZEN_AUTHOR_PASSWORD }}
+          D: ${{ secrets.TIZEN_DISTRIBUTOR_P12 }}
+          DP: ${{ secrets.TIZEN_DISTRIBUTOR_PASSWORD }}
+        run: |
+          missing=""
+          [ -n "$A" ] || missing="$missing TIZEN_AUTHOR_P12"
+          [ -n "$AP" ] || missing="$missing TIZEN_AUTHOR_PASSWORD"
+          [ -n "$D" ] || missing="$missing TIZEN_DISTRIBUTOR_P12"
+          [ -n "$DP" ] || missing="$missing TIZEN_DISTRIBUTOR_PASSWORD"
+          if [ -n "$missing" ]; then
+            echo "::error::repository secrets not set:$missing (see the header of .github/workflows/release.yml)"; exit 1
+          fi
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Tizen Studio CLI
+        run: |
+          curl -fsSL "$TIZEN_CLI_URL" -o "$RUNNER_TEMP/tizen-cli.bin"
+          echo "$TIZEN_CLI_SHA256  $RUNNER_TEMP/tizen-cli.bin" | sha256sum -c -
+          chmod +x "$RUNNER_TEMP/tizen-cli.bin"
+          "$RUNNER_TEMP/tizen-cli.bin" --accept-license "$HOME/tizen-studio"
+          rm "$RUNNER_TEMP/tizen-cli.bin"
+          "$HOME/tizen-studio/tools/ide/bin/tizen" version
+
+      - name: Build and sign
+        env:
+          TIZEN_STUDIO: /home/runner/tizen-studio
+          TIZEN_AUTHOR_P12: ${{ secrets.TIZEN_AUTHOR_P12 }}
+          TIZEN_AUTHOR_PASSWORD: ${{ secrets.TIZEN_AUTHOR_PASSWORD }}
+          TIZEN_DISTRIBUTOR_P12: ${{ secrets.TIZEN_DISTRIBUTOR_P12 }}
+          TIZEN_DISTRIBUTOR_PASSWORD: ${{ secrets.TIZEN_DISTRIBUTOR_PASSWORD }}
+        run: bash tools/release.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vi-translator-tizen-tv
+          path: build/vi-translator-tizen-tv-*.wgt
+          if-no-files-found: error
+
+  release:
+    needs: [check, build]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: vi-translator-tizen-tv
+          path: out
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ needs.check.outputs.version }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" out/* --repo "$GITHUB_REPOSITORY" \
+            --title "VI Translator for Samsung Tizen TVs $V" --generate-notes --verify-tag
