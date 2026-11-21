@@ -25,13 +25,17 @@ to the console's input. The app shows the picture only while it's open.
 3. This app shows the console's HDMI input and the translations over it, where they would be on
    the game picture. Only the text crosses your home network.
 
+Or with the VI Translator phone app instead of the PC: the phone plays the PS5 or the Xbox over
+Remote Play (no capture card) and reads the subtitles there, and this app shows the translations
+on the TV the same way.
+
 ## Setup
 
 1. **Install the app on the TV:** see *Install on a TV* below. It's not in the Samsung store.
 2. **Open it:** it shows a 6-digit code.
-3. **On the PC:** in VI Translator, *Show on* tab, *Connect a TV*. Type the code and
-   press *Connect*. The TV finds the PC by itself: it shows up in the list on the PC within about
-   20 seconds.
+3. **On the PC or the phone:** in VI Translator, *Show on* tab, *Connect a TV*. Type the code and
+   press *Connect*. The TV finds the PC or phone by itself: it shows up in the list there within
+   about 20 seconds.
 
 Once connected, the app shows the console's input with the translations. Press **OK** on the remote
 for the menu:
@@ -40,19 +44,19 @@ for the menu:
   the app was opened, or the first one connected.
 - **Language:** the app's language, the TV's own or one of VI Translator's 33. Also in the top
   corner of the code screen (press **OK** there).
-- **Disconnect:** the TV forgets the PC and shows a new code. Removing the TV in VI Translator on
-  the PC does the same.
+- **Disconnect:** the TV forgets the PC (or phone) and shows a new code. Removing the TV in VI
+  Translator on the PC or phone does the same.
 
 **Back** closes the menu, or the app.
 
-The app finds the PC again if the router gives the PC a new address.
+The app finds the PC or phone again if the router gives it a new address.
 
 ## Tips
 
 - Set the console's input to *Game* in the TV's input settings if your TV offers it, and check the
   picture delay feels the same as on the input itself.
-- The text style, the language and what is read are all set in VI Translator on the PC.
-- VI Translator on the PC must use its default home-network port (8791) for the TV to find it.
+- The text style, the language and what is read are all set in VI Translator on the PC or phone.
+- VI Translator on the PC or phone must use its default home-network port (8791) for the TV to find it.
 
 ## Connecting, for the PC side
 

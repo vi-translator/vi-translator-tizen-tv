@@ -1,8 +1,8 @@
 // Made by tools/import-strings.js from the Android TV app's strings.xml: don't edit by hand.
 var STRINGS = {
  "en": {
-  "enter_code": "Enter this code in VI Translator on your PC",
-  "where_on_pc": "On the PC: Show on › Connect a TV",
+  "enter_code": "Enter this code in VI Translator on your PC or phone",
+  "where_on_pc": "On the PC or phone: Show on › Connect a TV",
   "this_tv": "This TV: %1$s",
   "connected_to": "Connected to %1$s",
   "looking_for": "Looking for %1$s…",
@@ -15,8 +15,8 @@ var STRINGS = {
   "no_hdmi": "No HDMI input is connected"
  },
  "ar": {
-  "enter_code": "أدخل هذا الرمز في VI Translator على جهاز الكمبيوتر",
-  "where_on_pc": "على الكمبيوتر: العرض على › ربط تلفاز",
+  "enter_code": "أدخل هذا الرمز في VI Translator على الكمبيوتر أو الهاتف",
+  "where_on_pc": "على الكمبيوتر أو الهاتف: العرض على › ربط تلفاز",
   "this_tv": "هذا التلفاز: %1$s",
   "connected_to": "متصل بـ %1$s",
   "looking_for": "جارٍ البحث عن %1$s…",
@@ -29,8 +29,8 @@ var STRINGS = {
   "no_hdmi": "لا يوجد مدخل HDMI متصل"
  },
  "es-419": {
-  "enter_code": "Escribe este código en VI Translator en tu PC",
-  "where_on_pc": "En la PC: Mostrar en › Conectar una TV",
+  "enter_code": "Escribe este código en VI Translator en tu PC o celular",
+  "where_on_pc": "En la PC o el celular: Mostrar en › Conectar una TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Buscando %1$s…",
@@ -43,8 +43,8 @@ var STRINGS = {
   "no_hdmi": "No hay ninguna entrada HDMI conectada"
  },
  "zh-Hans": {
-  "enter_code": "在电脑上的 VI Translator 中输入此代码",
-  "where_on_pc": "在电脑上: 显示位置 › 连接电视",
+  "enter_code": "在电脑或手机上的 VI Translator 中输入此代码",
+  "where_on_pc": "在电脑或手机上: 显示位置 › 连接电视",
   "this_tv": "这台电视：%1$s",
   "connected_to": "已连接到 %1$s",
   "looking_for": "正在查找 %1$s…",
@@ -57,8 +57,8 @@ var STRINGS = {
   "no_hdmi": "没有已连接的 HDMI 输入源"
  },
  "zh-Hant": {
-  "enter_code": "在電腦上的 VI Translator 中輸入此代碼",
-  "where_on_pc": "在電腦上: 顯示位置 › 連線電視",
+  "enter_code": "在電腦或手機上的 VI Translator 中輸入此代碼",
+  "where_on_pc": "在電腦或手機上: 顯示位置 › 連線電視",
   "this_tv": "這台電視：%1$s",
   "connected_to": "已連線到 %1$s",
   "looking_for": "正在尋找 %1$s…",
@@ -71,8 +71,8 @@ var STRINGS = {
   "no_hdmi": "沒有已連接的 HDMI 輸入來源"
  },
  "bn": {
-  "enter_code": "আপনার পিসিতে VI Translator-এ এই কোডটি লিখুন",
-  "where_on_pc": "পিসিতে: যেখানে দেখাবে › একটি টিভি সংযুক্ত করুন",
+  "enter_code": "আপনার পিসি বা ফোনে VI Translator-এ এই কোডটি লিখুন",
+  "where_on_pc": "পিসি বা ফোনে: যেখানে দেখাবে › একটি টিভি সংযুক্ত করুন",
   "this_tv": "এই টিভি: %1$s",
   "connected_to": "%1$s-এর সাথে সংযুক্ত",
   "looking_for": "%1$s খোঁজা হচ্ছে…",
@@ -85,8 +85,8 @@ var STRINGS = {
   "no_hdmi": "কোনো HDMI ইনপুট সংযুক্ত নেই"
  },
  "cs": {
-  "enter_code": "Zadejte tento kód ve VI Translator na počítači",
-  "where_on_pc": "V počítači: Zobrazit na › Připojit televizi",
+  "enter_code": "Zadejte tento kód ve VI Translator na počítači nebo telefonu",
+  "where_on_pc": "V počítači nebo telefonu: Zobrazit na › Připojit televizi",
   "this_tv": "Tato televize: %1$s",
   "connected_to": "Připojeno k %1$s",
   "looking_for": "Hledá se %1$s…",
@@ -99,8 +99,8 @@ var STRINGS = {
   "no_hdmi": "Není připojen žádný vstup HDMI"
  },
  "de": {
-  "enter_code": "Gib diesen Code in VI Translator auf deinem PC ein",
-  "where_on_pc": "Auf dem PC: Anzeigen auf › Fernseher verbinden",
+  "enter_code": "Gib diesen Code in VI Translator auf deinem PC oder Handy ein",
+  "where_on_pc": "Auf dem PC oder Handy: Anzeigen auf › Fernseher verbinden",
   "this_tv": "Dieser Fernseher: %1$s",
   "connected_to": "Verbunden mit %1$s",
   "looking_for": "Suche %1$s…",
@@ -113,8 +113,8 @@ var STRINGS = {
   "no_hdmi": "Kein HDMI-Eingang angeschlossen"
  },
  "el": {
-  "enter_code": "Πληκτρολογήστε αυτόν τον κωδικό στο VI Translator στον υπολογιστή σας",
-  "where_on_pc": "Στον υπολογιστή: Προβολή σε › Σύνδεση τηλεόρασης",
+  "enter_code": "Πληκτρολογήστε αυτόν τον κωδικό στο VI Translator στον υπολογιστή ή στο κινητό σας",
+  "where_on_pc": "Στον υπολογιστή ή στο κινητό: Προβολή σε › Σύνδεση τηλεόρασης",
   "this_tv": "Αυτή η τηλεόραση: %1$s",
   "connected_to": "Συνδέθηκε με %1$s",
   "looking_for": "Αναζήτηση %1$s…",
@@ -127,8 +127,8 @@ var STRINGS = {
   "no_hdmi": "Δεν υπάρχει συνδεδεμένη είσοδος HDMI"
  },
  "es": {
-  "enter_code": "Introduce este código en VI Translator en tu PC",
-  "where_on_pc": "En el PC: Mostrar en › Conectar una tele",
+  "enter_code": "Introduce este código en VI Translator en tu PC o móvil",
+  "where_on_pc": "En el PC o el móvil: Mostrar en › Conectar una tele",
   "this_tv": "Esta tele: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Buscando %1$s…",
@@ -141,8 +141,8 @@ var STRINGS = {
   "no_hdmi": "No hay ninguna entrada HDMI conectada"
  },
  "es-MX": {
-  "enter_code": "Escribe este código en VI Translator en tu PC",
-  "where_on_pc": "En la PC: Mostrar en › Conectar una TV",
+  "enter_code": "Escribe este código en VI Translator en tu PC o celular",
+  "where_on_pc": "En la PC o el celular: Mostrar en › Conectar una TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Buscando %1$s…",
@@ -155,8 +155,8 @@ var STRINGS = {
   "no_hdmi": "No hay ninguna entrada HDMI conectada"
  },
  "fa": {
-  "enter_code": "این کد را در VI Translator روی رایانه وارد کنید",
-  "where_on_pc": "روی رایانه: نمایش روی › اتصال یک تلویزیون",
+  "enter_code": "این کد را در VI Translator روی رایانه یا گوشی وارد کنید",
+  "where_on_pc": "روی رایانه یا گوشی: نمایش روی › اتصال یک تلویزیون",
   "this_tv": "این تلویزیون: %1$s",
   "connected_to": "متصل به %1$s",
   "looking_for": "در حال جستجوی %1$s…",
@@ -169,8 +169,8 @@ var STRINGS = {
   "no_hdmi": "هیچ ورودی HDMI وصل نیست"
  },
  "fil": {
-  "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC",
-  "where_on_pc": "Sa PC: Ipakita sa › Magkonekta ng TV",
+  "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC o phone",
+  "where_on_pc": "Sa PC o phone: Ipakita sa › Magkonekta ng TV",
   "this_tv": "Ang TV na ito: %1$s",
   "connected_to": "Nakakonekta sa %1$s",
   "looking_for": "Hinahanap ang %1$s…",
@@ -183,8 +183,8 @@ var STRINGS = {
   "no_hdmi": "Walang nakakonektang HDMI input"
  },
  "fr": {
-  "enter_code": "Saisissez ce code dans VI Translator sur votre PC",
-  "where_on_pc": "Sur le PC: Afficher sur › Connecter une TV",
+  "enter_code": "Saisissez ce code dans VI Translator sur votre PC ou téléphone",
+  "where_on_pc": "Sur le PC ou le téléphone: Afficher sur › Connecter une TV",
   "this_tv": "Cette TV : %1$s",
   "connected_to": "Connecté à %1$s",
   "looking_for": "Recherche de %1$s…",
@@ -197,8 +197,8 @@ var STRINGS = {
   "no_hdmi": "Aucune entrée HDMI n’est branchée"
  },
  "hi": {
-  "enter_code": "अपने पीसी पर VI Translator में यह कोड डालें",
-  "where_on_pc": "पीसी पर: यहाँ दिखाएँ › टीवी जोड़ें",
+  "enter_code": "अपने पीसी या फ़ोन पर VI Translator में यह कोड डालें",
+  "where_on_pc": "पीसी या फ़ोन पर: यहाँ दिखाएँ › टीवी जोड़ें",
   "this_tv": "यह टीवी: %1$s",
   "connected_to": "%1$s से जुड़ा है",
   "looking_for": "%1$s खोजा जा रहा है…",
@@ -211,8 +211,8 @@ var STRINGS = {
   "no_hdmi": "कोई HDMI इनपुट जुड़ा नहीं है"
  },
  "id": {
-  "enter_code": "Masukkan kode ini di VI Translator di PC Anda",
-  "where_on_pc": "Di PC: Tampilkan di › Hubungkan TV",
+  "enter_code": "Masukkan kode ini di VI Translator di PC atau ponsel Anda",
+  "where_on_pc": "Di PC atau ponsel: Tampilkan di › Hubungkan TV",
   "this_tv": "TV ini: %1$s",
   "connected_to": "Terhubung ke %1$s",
   "looking_for": "Mencari %1$s…",
@@ -225,8 +225,8 @@ var STRINGS = {
   "no_hdmi": "Tidak ada input HDMI yang tersambung"
  },
  "it": {
-  "enter_code": "Inserisci questo codice in VI Translator sul PC",
-  "where_on_pc": "Sul PC: Mostra su › Collega una TV",
+  "enter_code": "Inserisci questo codice in VI Translator sul PC o sul telefono",
+  "where_on_pc": "Sul PC o sul telefono: Mostra su › Collega una TV",
   "this_tv": "Questa TV: %1$s",
   "connected_to": "Collegato a %1$s",
   "looking_for": "Ricerca di %1$s…",
@@ -239,8 +239,8 @@ var STRINGS = {
   "no_hdmi": "Nessun ingresso HDMI collegato"
  },
  "ja": {
-  "enter_code": "PC の VI Translator にこのコードを入力してください",
-  "where_on_pc": "PC で: 表示先 › テレビを接続",
+  "enter_code": "PC またはスマートフォンの VI Translator にこのコードを入力してください",
+  "where_on_pc": "PC またはスマートフォンで: 表示先 › テレビを接続",
   "this_tv": "このテレビ: %1$s",
   "connected_to": "%1$s に接続しました",
   "looking_for": "%1$s を探しています…",
@@ -253,8 +253,8 @@ var STRINGS = {
   "no_hdmi": "接続された HDMI 入力がありません"
  },
  "ko": {
-  "enter_code": "PC의 VI Translator에 이 코드를 입력하세요",
-  "where_on_pc": "PC에서: 표시 위치 › TV 연결",
+  "enter_code": "PC 또는 휴대폰의 VI Translator에 이 코드를 입력하세요",
+  "where_on_pc": "PC 또는 휴대폰에서: 표시 위치 › TV 연결",
   "this_tv": "이 TV: %1$s",
   "connected_to": "%1$s에 연결됨",
   "looking_for": "%1$s 찾는 중…",
@@ -267,8 +267,8 @@ var STRINGS = {
   "no_hdmi": "연결된 HDMI 입력이 없습니다"
  },
  "mr": {
-  "enter_code": "तुमच्या पीसीवरील VI Translator मध्ये हा कोड टाका",
-  "where_on_pc": "पीसीवर: इथे दाखवा › टीव्ही जोडा",
+  "enter_code": "तुमच्या पीसी किंवा फोनवरील VI Translator मध्ये हा कोड टाका",
+  "where_on_pc": "पीसी किंवा फोनवर: इथे दाखवा › टीव्ही जोडा",
   "this_tv": "हा टीव्ही: %1$s",
   "connected_to": "%1$s शी जोडले",
   "looking_for": "%1$s शोधत आहे…",
@@ -281,8 +281,8 @@ var STRINGS = {
   "no_hdmi": "कोणतेही HDMI इनपुट जोडलेले नाही"
  },
  "ms": {
-  "enter_code": "Masukkan kod ini dalam VI Translator pada PC anda",
-  "where_on_pc": "Pada PC: Papar pada › Sambungkan TV",
+  "enter_code": "Masukkan kod ini dalam VI Translator pada PC atau telefon anda",
+  "where_on_pc": "Pada PC atau telefon: Papar pada › Sambungkan TV",
   "this_tv": "TV ini: %1$s",
   "connected_to": "Disambungkan ke %1$s",
   "looking_for": "Mencari %1$s…",
@@ -295,8 +295,8 @@ var STRINGS = {
   "no_hdmi": "Tiada input HDMI disambungkan"
  },
  "nl": {
-  "enter_code": "Voer deze code in bij VI Translator op je pc",
-  "where_on_pc": "Op de pc: Tonen op › Tv koppelen",
+  "enter_code": "Voer deze code in bij VI Translator op je pc of telefoon",
+  "where_on_pc": "Op de pc of telefoon: Tonen op › Tv koppelen",
   "this_tv": "Deze tv: %1$s",
   "connected_to": "Gekoppeld aan %1$s",
   "looking_for": "%1$s zoeken…",
@@ -309,8 +309,8 @@ var STRINGS = {
   "no_hdmi": "Geen HDMI-ingang aangesloten"
  },
  "pl": {
-  "enter_code": "Wpisz ten kod w VI Translator na komputerze",
-  "where_on_pc": "Na komputerze: Pokaż na › Połącz telewizor",
+  "enter_code": "Wpisz ten kod w VI Translator na komputerze lub telefonie",
+  "where_on_pc": "Na komputerze lub telefonie: Pokaż na › Połącz telewizor",
   "this_tv": "Ten telewizor: %1$s",
   "connected_to": "Połączono z %1$s",
   "looking_for": "Szukanie %1$s…",
@@ -323,8 +323,8 @@ var STRINGS = {
   "no_hdmi": "Brak podłączonego wejścia HDMI"
  },
  "pt": {
-  "enter_code": "Digite este código no VI Translator no seu PC",
-  "where_on_pc": "No PC: Mostrar em › Conectar uma TV",
+  "enter_code": "Digite este código no VI Translator no seu PC ou celular",
+  "where_on_pc": "No PC ou celular: Mostrar em › Conectar uma TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Procurando %1$s…",
@@ -337,8 +337,8 @@ var STRINGS = {
   "no_hdmi": "Nenhuma entrada HDMI ligada"
  },
  "pt-BR": {
-  "enter_code": "Digite este código no VI Translator no seu PC",
-  "where_on_pc": "No PC: Mostrar em › Conectar uma TV",
+  "enter_code": "Digite este código no VI Translator no seu PC ou celular",
+  "where_on_pc": "No PC ou celular: Mostrar em › Conectar uma TV",
   "this_tv": "Esta TV: %1$s",
   "connected_to": "Conectado a %1$s",
   "looking_for": "Procurando %1$s…",
@@ -351,8 +351,8 @@ var STRINGS = {
   "no_hdmi": "Nenhuma entrada HDMI conectada"
  },
  "ro": {
-  "enter_code": "Introdu acest cod în VI Translator pe PC",
-  "where_on_pc": "Pe PC: Afișare pe › Conectează un televizor",
+  "enter_code": "Introdu acest cod în VI Translator pe PC sau telefon",
+  "where_on_pc": "Pe PC sau telefon: Afișare pe › Conectează un televizor",
   "this_tv": "Acest televizor: %1$s",
   "connected_to": "Conectat la %1$s",
   "looking_for": "Se caută %1$s…",
@@ -365,8 +365,8 @@ var STRINGS = {
   "no_hdmi": "Nicio intrare HDMI conectată"
  },
  "ru": {
-  "enter_code": "Введите этот код в VI Translator на ПК",
-  "where_on_pc": "На ПК: Показ на › Подключить телевизор",
+  "enter_code": "Введите этот код в VI Translator на ПК или телефоне",
+  "where_on_pc": "На ПК или телефоне: Показ на › Подключить телевизор",
   "this_tv": "Этот телевизор: %1$s",
   "connected_to": "Подключено к %1$s",
   "looking_for": "Поиск %1$s…",
@@ -379,8 +379,8 @@ var STRINGS = {
   "no_hdmi": "Нет подключённых входов HDMI"
  },
  "sw": {
-  "enter_code": "Weka msimbo huu katika VI Translator kwenye kompyuta yako",
-  "where_on_pc": "Kwenye kompyuta: Onyesha kwenye › Unganisha TV",
+  "enter_code": "Weka msimbo huu katika VI Translator kwenye kompyuta au simu yako",
+  "where_on_pc": "Kwenye kompyuta au simu: Onyesha kwenye › Unganisha TV",
   "this_tv": "TV hii: %1$s",
   "connected_to": "Imeunganishwa na %1$s",
   "looking_for": "Inatafuta %1$s…",
@@ -393,8 +393,8 @@ var STRINGS = {
   "no_hdmi": "Hakuna ingizo la HDMI lililounganishwa"
  },
  "ta": {
-  "enter_code": "உங்கள் கணினியில் VI Translator-இல் இந்தக் குறியீட்டை உள்ளிடவும்",
-  "where_on_pc": "கணினியில்: காட்டும் இடம் › டிவியை இணை",
+  "enter_code": "உங்கள் கணினி அல்லது ஃபோனில் VI Translator-இல் இந்தக் குறியீட்டை உள்ளிடவும்",
+  "where_on_pc": "கணினி அல்லது ஃபோனில்: காட்டும் இடம் › டிவியை இணை",
   "this_tv": "இந்த டிவி: %1$s",
   "connected_to": "%1$s உடன் இணைந்தது",
   "looking_for": "%1$s தேடப்படுகிறது…",
@@ -407,8 +407,8 @@ var STRINGS = {
   "no_hdmi": "HDMI உள்ளீடு எதுவும் இணைக்கப்படவில்லை"
  },
  "te": {
-  "enter_code": "మీ PCలో VI Translatorలో ఈ కోడ్‌ను నమోదు చేయండి",
-  "where_on_pc": "PCలో: చూపే చోటు › టీవీని కనెక్ట్ చేయండి",
+  "enter_code": "మీ PC లేదా ఫోన్‌లో VI Translatorలో ఈ కోడ్‌ను నమోదు చేయండి",
+  "where_on_pc": "PC లేదా ఫోన్‌లో: చూపే చోటు › టీవీని కనెక్ట్ చేయండి",
   "this_tv": "ఈ టీవీ: %1$s",
   "connected_to": "%1$sకి కనెక్ట్ అయింది",
   "looking_for": "%1$s కోసం వెతుకుతోంది…",
@@ -421,8 +421,8 @@ var STRINGS = {
   "no_hdmi": "HDMI ఇన్‌పుట్ ఏదీ కనెక్ట్ కాలేదు"
  },
  "th": {
-  "enter_code": "ใส่รหัสนี้ใน VI Translator บนพีซีของคุณ",
-  "where_on_pc": "บนพีซี: แสดงบน › เชื่อมต่อทีวี",
+  "enter_code": "ใส่รหัสนี้ใน VI Translator บนพีซีหรือโทรศัพท์ของคุณ",
+  "where_on_pc": "บนพีซีหรือโทรศัพท์: แสดงบน › เชื่อมต่อทีวี",
   "this_tv": "ทีวีเครื่องนี้: %1$s",
   "connected_to": "เชื่อมต่อกับ %1$s แล้ว",
   "looking_for": "กำลังค้นหา %1$s…",
@@ -435,8 +435,8 @@ var STRINGS = {
   "no_hdmi": "ไม่มีอินพุต HDMI ที่เชื่อมต่อ"
  },
  "tl": {
-  "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC",
-  "where_on_pc": "Sa PC: Ipakita sa › Magkonekta ng TV",
+  "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC o phone",
+  "where_on_pc": "Sa PC o phone: Ipakita sa › Magkonekta ng TV",
   "this_tv": "Ang TV na ito: %1$s",
   "connected_to": "Nakakonekta sa %1$s",
   "looking_for": "Hinahanap ang %1$s…",
@@ -449,8 +449,8 @@ var STRINGS = {
   "no_hdmi": "Walang nakakonektang HDMI input"
  },
  "tr": {
-  "enter_code": "Bu kodu bilgisayarınızdaki VI Translator'a girin",
-  "where_on_pc": "Bilgisayarda: Şurada göster › Televizyon bağla",
+  "enter_code": "Bu kodu bilgisayarınızdaki veya telefonunuzdaki VI Translator'a girin",
+  "where_on_pc": "Bilgisayarda veya telefonda: Şurada göster › Televizyon bağla",
   "this_tv": "Bu televizyon: %1$s",
   "connected_to": "%1$s cihazına bağlandı",
   "looking_for": "%1$s aranıyor…",
@@ -463,8 +463,8 @@ var STRINGS = {
   "no_hdmi": "Bağlı HDMI girişi yok"
  },
  "uk": {
-  "enter_code": "Введіть цей код у VI Translator на ПК",
-  "where_on_pc": "На ПК: Показ на › Підключити телевізор",
+  "enter_code": "Введіть цей код у VI Translator на ПК або телефоні",
+  "where_on_pc": "На ПК або телефоні: Показ на › Підключити телевізор",
   "this_tv": "Цей телевізор: %1$s",
   "connected_to": "Підключено до %1$s",
   "looking_for": "Пошук %1$s…",
@@ -477,8 +477,8 @@ var STRINGS = {
   "no_hdmi": "Немає підключених входів HDMI"
  },
  "ur": {
-  "enter_code": "اپنے پی سی پر VI Translator میں یہ کوڈ درج کریں",
-  "where_on_pc": "پی سی پر: یہاں دکھائیں › ٹی وی جوڑیں",
+  "enter_code": "اپنے پی سی یا فون پر VI Translator میں یہ کوڈ درج کریں",
+  "where_on_pc": "پی سی یا فون پر: یہاں دکھائیں › ٹی وی جوڑیں",
   "this_tv": "یہ ٹی وی: %1$s",
   "connected_to": "%1$s سے جڑا ہے",
   "looking_for": "%1$s تلاش کیا جا رہا ہے…",
@@ -491,8 +491,8 @@ var STRINGS = {
   "no_hdmi": "کوئی HDMI ان پٹ منسلک نہیں"
  },
  "vi": {
-  "enter_code": "Nhập mã này trong VI Translator trên PC",
-  "where_on_pc": "Trên PC: Hiển thị trên › Kết nối TV",
+  "enter_code": "Nhập mã này trong VI Translator trên PC hoặc điện thoại",
+  "where_on_pc": "Trên PC hoặc điện thoại: Hiển thị trên › Kết nối TV",
   "this_tv": "TV này: %1$s",
   "connected_to": "Đã kết nối với %1$s",
   "looking_for": "Đang tìm %1$s…",
@@ -505,8 +505,8 @@ var STRINGS = {
   "no_hdmi": "Không có đầu vào HDMI nào được kết nối"
  },
  "zh-CN": {
-  "enter_code": "在电脑上的 VI Translator 中输入此代码",
-  "where_on_pc": "在电脑上: 显示位置 › 连接电视",
+  "enter_code": "在电脑或手机上的 VI Translator 中输入此代码",
+  "where_on_pc": "在电脑或手机上: 显示位置 › 连接电视",
   "this_tv": "这台电视：%1$s",
   "connected_to": "已连接到 %1$s",
   "looking_for": "正在查找 %1$s…",
@@ -519,8 +519,8 @@ var STRINGS = {
   "no_hdmi": "没有已连接的 HDMI 输入源"
  },
  "zh-HK": {
-  "enter_code": "在電腦上的 VI Translator 中輸入此代碼",
-  "where_on_pc": "在電腦上: 顯示位置 › 連線電視",
+  "enter_code": "在電腦或手機上的 VI Translator 中輸入此代碼",
+  "where_on_pc": "在電腦或手機上: 顯示位置 › 連線電視",
   "this_tv": "這台電視：%1$s",
   "connected_to": "已連線到 %1$s",
   "looking_for": "正在尋找 %1$s…",
@@ -533,8 +533,8 @@ var STRINGS = {
   "no_hdmi": "沒有已連接的 HDMI 輸入來源"
  },
  "zh-TW": {
-  "enter_code": "在電腦上的 VI Translator 中輸入此代碼",
-  "where_on_pc": "在電腦上: 顯示位置 › 連線電視",
+  "enter_code": "在電腦或手機上的 VI Translator 中輸入此代碼",
+  "where_on_pc": "在電腦或手機上: 顯示位置 › 連線電視",
   "this_tv": "這台電視：%1$s",
   "connected_to": "已連線到 %1$s",
   "looking_for": "正在尋找 %1$s…",
