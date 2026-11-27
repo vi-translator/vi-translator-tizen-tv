@@ -51,6 +51,10 @@ for the menu:
 
 The app finds the PC or phone again if the router gives it a new address.
 
+Keep VI Translator open on the phone while you play. If the phone pauses it (iOS does when you
+switch to PS Remote Play), the TV says *Waiting for VI Translator on your phone or PC* at the top
+until it answers again.
+
 ## Tips
 
 - Set the console's input to *Game* in the TV's input settings if your TV offers it, and check the

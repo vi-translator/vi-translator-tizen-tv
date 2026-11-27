@@ -11,6 +11,9 @@
  * TV. From then on it's the same as the Android TV app: the TV page (/tv?t=<key>), a 403 when the
  * TV was removed on the PC (back to a code), /tv/forget on Disconnect.
  *
+ * While the PC or phone doesn't answer (iOS pauses the phone app when the player switches to Remote
+ * Play), a note at the top says so, and goes when it answers again.
+ *
  * Plain ES5: it runs on the 2018 TVs' web engine (Chromium 56).
  */
 (function () {
@@ -29,6 +32,8 @@
   /** hosts asked at once while looking through the network */
   var PARALLEL = 48;
   var HINT_MS = 6000;
+  /** the TV page quiet this long (it asks the PC every few seconds, each within 6 s): not answering */
+  var QUIET_MS = 9000;
   var TOKEN = /^[0-9a-f]{32,128}$/;
 
   var KEY = { LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40, ENTER: 13, BACK: 10009, ESC: 27 };
@@ -534,6 +539,13 @@
     url: "",
     state: State.UNREACHABLE,
     unreachable: 0,
+    /** the PC's last answer was none (the app closed or paused, the PC off) */
+    away: false,
+    /** asking the PC (one question at a time) */
+    asking: false,
+    /** when the TV page last said it's alive (it does after each answer from the PC), and whether it ever did */
+    lastAlive: 0,
+    everAlive: false,
     finding: false,
     retryTimer: 0,
     checkTimer: 0,
@@ -543,6 +555,7 @@
       overlay.on = true;
       overlay.state = State.UNREACHABLE;
       overlay.unreachable = 0;
+      overlay.away = false;
       tv.load(function () {
         if (!overlay.on) return;
         tv.show();
@@ -557,13 +570,17 @@
       clearTimeout(overlay.retryTimer);
       clearTimeout(overlay.checkTimer);
       overlay.url = "";
+      overlay.away = false;
+      overlay.everAlive = false;
       $("overlay").src = "about:blank";
       tv.hide();
+      note.paint();
     },
 
     show: function (url) {
       if (url === overlay.url) return;
       overlay.url = url;
+      overlay.everAlive = false;
       overlay.load();
     },
 
@@ -588,6 +605,8 @@
 
     setState: function (s) {
       overlay.state = s;
+      overlay.away = s === State.UNREACHABLE;
+      note.paint();
       if (s === State.REMOVED) {
         prefs.disconnect();
         render();
@@ -600,9 +619,12 @@
     check: function () {
       clearTimeout(overlay.checkTimer);
       if (!overlay.on) return;
+      if (overlay.asking) return;
       var pc = prefs.get("pc");
       var token = prefs.get("token");
+      overlay.asking = true;
       ask(pc, token, 4000, function (s) {
+        overlay.asking = false;
         if (!overlay.on) return;
         overlay.setState(s);
         if (!overlay.on) return;
@@ -639,6 +661,35 @@
       );
     }
   };
+
+  // The TV page tells it's alive after each answer from the PC (a message from its frame; PC apps from
+  // 1.2.2 on): an answer while the PC was away asks it at once, so the note goes as soon as it's back.
+  window.addEventListener("message", function (e) {
+    if (!overlay.url || !e.data || e.data.vit !== "alive") return;
+    // (from the PC's page only)
+    if (overlay.url.indexOf(e.origin + "/") !== 0) return;
+    overlay.lastAlive = Date.now();
+    overlay.everAlive = true;
+    if (overlay.away) overlay.check();
+    note.paint();
+  });
+
+  // ---------------------------------------------------------------- the PC or phone not answering
+
+  /** "Waiting for VI Translator on your phone or PC. Keep the app open.", at the top while it lasts. */
+  var note = {
+    away: function () {
+      if (!overlay.on || document.hidden) return false;
+      if (overlay.away) return true;
+      return overlay.everAlive && Date.now() - overlay.lastAlive > QUIET_MS;
+    },
+    paint: function () {
+      var away = note.away();
+      $("source-note").classList.toggle("hidden", !away);
+      if (away) $("source-note-text").textContent = t("waiting_source");
+    }
+  };
+  setInterval(note.paint, 1000);
 
   // ---------------------------------------------------------------- the menu
 
