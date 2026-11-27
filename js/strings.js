@@ -12,7 +12,8 @@ var STRINGS = {
   "language_tv": "TV language",
   "input": "Input: %1$s",
   "menu_hint": "Press OK for the menu",
-  "no_hdmi": "No HDMI input is connected"
+  "no_hdmi": "No HDMI input is connected",
+  "waiting_source": "Waiting for VI Translator on your phone or PC. Keep the app open."
  },
  "ar": {
   "enter_code": "أدخل هذا الرمز في VI Translator على الكمبيوتر أو الهاتف",
@@ -26,7 +27,8 @@ var STRINGS = {
   "language_tv": "لغة التلفاز",
   "input": "المدخل: %1$s",
   "menu_hint": "اضغط OK لفتح القائمة",
-  "no_hdmi": "لا يوجد مدخل HDMI متصل"
+  "no_hdmi": "لا يوجد مدخل HDMI متصل",
+  "waiting_source": "في انتظار VI Translator على هاتفك أو الكمبيوتر. أبقِ التطبيق مفتوحًا."
  },
  "es-419": {
   "enter_code": "Escribe este código en VI Translator en tu PC o celular",
@@ -40,7 +42,8 @@ var STRINGS = {
   "language_tv": "Idioma de la TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Presiona OK para ver el menú",
-  "no_hdmi": "No hay ninguna entrada HDMI conectada"
+  "no_hdmi": "No hay ninguna entrada HDMI conectada",
+  "waiting_source": "Esperando a VI Translator en tu celular o PC. Mantén la app abierta."
  },
  "zh-Hans": {
   "enter_code": "在电脑或手机上的 VI Translator 中输入此代码",
@@ -54,7 +57,8 @@ var STRINGS = {
   "language_tv": "电视语言",
   "input": "输入源：%1$s",
   "menu_hint": "按 OK 打开菜单",
-  "no_hdmi": "没有已连接的 HDMI 输入源"
+  "no_hdmi": "没有已连接的 HDMI 输入源",
+  "waiting_source": "正在等待手机或电脑上的 VI Translator。请保持应用打开。"
  },
  "zh-Hant": {
   "enter_code": "在電腦或手機上的 VI Translator 中輸入此代碼",
@@ -68,7 +72,8 @@ var STRINGS = {
   "language_tv": "電視語言",
   "input": "輸入來源：%1$s",
   "menu_hint": "按 OK 開啟選單",
-  "no_hdmi": "沒有已連接的 HDMI 輸入來源"
+  "no_hdmi": "沒有已連接的 HDMI 輸入來源",
+  "waiting_source": "正在等待手機或電腦上的 VI Translator。請讓應用程式保持開啟。"
  },
  "bn": {
   "enter_code": "আপনার পিসি বা ফোনে VI Translator-এ এই কোডটি লিখুন",
@@ -82,7 +87,8 @@ var STRINGS = {
   "language_tv": "টিভির ভাষা",
   "input": "ইনপুট: %1$s",
   "menu_hint": "মেনুর জন্য OK চাপুন",
-  "no_hdmi": "কোনো HDMI ইনপুট সংযুক্ত নেই"
+  "no_hdmi": "কোনো HDMI ইনপুট সংযুক্ত নেই",
+  "waiting_source": "আপনার ফোন বা পিসিতে VI Translator-এর জন্য অপেক্ষা করা হচ্ছে। অ্যাপটি খোলা রাখুন।"
  },
  "cs": {
   "enter_code": "Zadejte tento kód ve VI Translator na počítači nebo telefonu",
@@ -96,7 +102,8 @@ var STRINGS = {
   "language_tv": "Jazyk televize",
   "input": "Vstup: %1$s",
   "menu_hint": "Stiskněte OK pro nabídku",
-  "no_hdmi": "Není připojen žádný vstup HDMI"
+  "no_hdmi": "Není připojen žádný vstup HDMI",
+  "waiting_source": "Čeká se na VI Translator v telefonu nebo PC. Nechte aplikaci otevřenou."
  },
  "de": {
   "enter_code": "Gib diesen Code in VI Translator auf deinem PC oder Handy ein",
@@ -110,7 +117,8 @@ var STRINGS = {
   "language_tv": "Sprache des Fernsehers",
   "input": "Eingang: %1$s",
   "menu_hint": "OK drücken für das Menü",
-  "no_hdmi": "Kein HDMI-Eingang angeschlossen"
+  "no_hdmi": "Kein HDMI-Eingang angeschlossen",
+  "waiting_source": "Warte auf VI Translator auf deinem Handy oder PC. Lass die App geöffnet."
  },
  "el": {
   "enter_code": "Πληκτρολογήστε αυτόν τον κωδικό στο VI Translator στον υπολογιστή ή στο κινητό σας",
@@ -124,7 +132,8 @@ var STRINGS = {
   "language_tv": "Γλώσσα τηλεόρασης",
   "input": "Είσοδος: %1$s",
   "menu_hint": "Πατήστε OK για το μενού",
-  "no_hdmi": "Δεν υπάρχει συνδεδεμένη είσοδος HDMI"
+  "no_hdmi": "Δεν υπάρχει συνδεδεμένη είσοδος HDMI",
+  "waiting_source": "Αναμονή για το VI Translator στο τηλέφωνο ή τον υπολογιστή σας. Κρατήστε την εφαρμογή ανοιχτή."
  },
  "es": {
   "enter_code": "Introduce este código en VI Translator en tu PC o móvil",
@@ -138,7 +147,8 @@ var STRINGS = {
   "language_tv": "Idioma de la tele",
   "input": "Entrada: %1$s",
   "menu_hint": "Pulsa OK para ver el menú",
-  "no_hdmi": "No hay ninguna entrada HDMI conectada"
+  "no_hdmi": "No hay ninguna entrada HDMI conectada",
+  "waiting_source": "Esperando a VI Translator en tu móvil o PC. Mantén la app abierta."
  },
  "es-MX": {
   "enter_code": "Escribe este código en VI Translator en tu PC o celular",
@@ -152,7 +162,8 @@ var STRINGS = {
   "language_tv": "Idioma de la TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Presiona OK para ver el menú",
-  "no_hdmi": "No hay ninguna entrada HDMI conectada"
+  "no_hdmi": "No hay ninguna entrada HDMI conectada",
+  "waiting_source": "Esperando a VI Translator en tu celular o PC. Mantén la app abierta."
  },
  "fa": {
   "enter_code": "این کد را در VI Translator روی رایانه یا گوشی وارد کنید",
@@ -166,7 +177,8 @@ var STRINGS = {
   "language_tv": "زبان تلویزیون",
   "input": "ورودی: %1$s",
   "menu_hint": "برای منو OK را بزنید",
-  "no_hdmi": "هیچ ورودی HDMI وصل نیست"
+  "no_hdmi": "هیچ ورودی HDMI وصل نیست",
+  "waiting_source": "در انتظار VI Translator روی گوشی یا رایانهٔ شما. برنامه را باز نگه دارید."
  },
  "fil": {
   "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC o phone",
@@ -180,7 +192,8 @@ var STRINGS = {
   "language_tv": "Wika ng TV",
   "input": "Input: %1$s",
   "menu_hint": "Pindutin ang OK para sa menu",
-  "no_hdmi": "Walang nakakonektang HDMI input"
+  "no_hdmi": "Walang nakakonektang HDMI input",
+  "waiting_source": "Hinihintay ang VI Translator sa iyong phone o PC. Panatilihing bukas ang app."
  },
  "fr": {
   "enter_code": "Saisissez ce code dans VI Translator sur votre PC ou téléphone",
@@ -194,7 +207,8 @@ var STRINGS = {
   "language_tv": "Langue de la TV",
   "input": "Entrée : %1$s",
   "menu_hint": "Appuyez sur OK pour le menu",
-  "no_hdmi": "Aucune entrée HDMI n’est branchée"
+  "no_hdmi": "Aucune entrée HDMI n’est branchée",
+  "waiting_source": "En attente de VI Translator sur votre téléphone ou PC. Gardez l’app ouverte."
  },
  "hi": {
   "enter_code": "अपने पीसी या फ़ोन पर VI Translator में यह कोड डालें",
@@ -208,7 +222,8 @@ var STRINGS = {
   "language_tv": "टीवी की भाषा",
   "input": "इनपुट: %1$s",
   "menu_hint": "मेनू के लिए OK दबाएँ",
-  "no_hdmi": "कोई HDMI इनपुट जुड़ा नहीं है"
+  "no_hdmi": "कोई HDMI इनपुट जुड़ा नहीं है",
+  "waiting_source": "आपके फ़ोन या पीसी पर VI Translator का इंतज़ार है। ऐप खुला रखें।"
  },
  "id": {
   "enter_code": "Masukkan kode ini di VI Translator di PC atau ponsel Anda",
@@ -222,7 +237,8 @@ var STRINGS = {
   "language_tv": "Bahasa TV",
   "input": "Input: %1$s",
   "menu_hint": "Tekan OK untuk menu",
-  "no_hdmi": "Tidak ada input HDMI yang tersambung"
+  "no_hdmi": "Tidak ada input HDMI yang tersambung",
+  "waiting_source": "Menunggu VI Translator di ponsel atau PC Anda. Biarkan aplikasi tetap terbuka."
  },
  "it": {
   "enter_code": "Inserisci questo codice in VI Translator sul PC o sul telefono",
@@ -236,7 +252,8 @@ var STRINGS = {
   "language_tv": "Lingua della TV",
   "input": "Ingresso: %1$s",
   "menu_hint": "Premi OK per il menu",
-  "no_hdmi": "Nessun ingresso HDMI collegato"
+  "no_hdmi": "Nessun ingresso HDMI collegato",
+  "waiting_source": "In attesa di VI Translator sul telefono o sul PC. Tieni l’app aperta."
  },
  "ja": {
   "enter_code": "PC またはスマートフォンの VI Translator にこのコードを入力してください",
@@ -250,7 +267,8 @@ var STRINGS = {
   "language_tv": "テレビの言語",
   "input": "入力：%1$s",
   "menu_hint": "OK を押すとメニューが開きます",
-  "no_hdmi": "接続された HDMI 入力がありません"
+  "no_hdmi": "接続された HDMI 入力がありません",
+  "waiting_source": "スマートフォンまたは PC の VI Translator を待っています。アプリを開いたままにしてください。"
  },
  "ko": {
   "enter_code": "PC 또는 휴대폰의 VI Translator에 이 코드를 입력하세요",
@@ -264,7 +282,8 @@ var STRINGS = {
   "language_tv": "TV 언어",
   "input": "입력: %1$s",
   "menu_hint": "메뉴를 보려면 OK를 누르세요",
-  "no_hdmi": "연결된 HDMI 입력이 없습니다"
+  "no_hdmi": "연결된 HDMI 입력이 없습니다",
+  "waiting_source": "휴대폰 또는 PC의 VI Translator를 기다리는 중입니다. 앱을 열어 두세요."
  },
  "mr": {
   "enter_code": "तुमच्या पीसी किंवा फोनवरील VI Translator मध्ये हा कोड टाका",
@@ -278,7 +297,8 @@ var STRINGS = {
   "language_tv": "टीव्हीची भाषा",
   "input": "इनपुट: %1$s",
   "menu_hint": "मेनूसाठी OK दाबा",
-  "no_hdmi": "कोणतेही HDMI इनपुट जोडलेले नाही"
+  "no_hdmi": "कोणतेही HDMI इनपुट जोडलेले नाही",
+  "waiting_source": "तुमच्या फोन किंवा पीसीवरील VI Translator ची वाट पाहत आहे. ॲप उघडे ठेवा."
  },
  "ms": {
   "enter_code": "Masukkan kod ini dalam VI Translator pada PC atau telefon anda",
@@ -292,7 +312,8 @@ var STRINGS = {
   "language_tv": "Bahasa TV",
   "input": "Input: %1$s",
   "menu_hint": "Tekan OK untuk menu",
-  "no_hdmi": "Tiada input HDMI disambungkan"
+  "no_hdmi": "Tiada input HDMI disambungkan",
+  "waiting_source": "Menunggu VI Translator pada telefon atau PC anda. Biarkan aplikasi terbuka."
  },
  "nl": {
   "enter_code": "Voer deze code in bij VI Translator op je pc of telefoon",
@@ -306,7 +327,8 @@ var STRINGS = {
   "language_tv": "Taal van de tv",
   "input": "Ingang: %1$s",
   "menu_hint": "Druk op OK voor het menu",
-  "no_hdmi": "Geen HDMI-ingang aangesloten"
+  "no_hdmi": "Geen HDMI-ingang aangesloten",
+  "waiting_source": "Wachten op VI Translator op je telefoon of pc. Houd de app open."
  },
  "pl": {
   "enter_code": "Wpisz ten kod w VI Translator na komputerze lub telefonie",
@@ -320,7 +342,8 @@ var STRINGS = {
   "language_tv": "Język telewizora",
   "input": "Wejście: %1$s",
   "menu_hint": "Naciśnij OK, aby otworzyć menu",
-  "no_hdmi": "Brak podłączonego wejścia HDMI"
+  "no_hdmi": "Brak podłączonego wejścia HDMI",
+  "waiting_source": "Czekam na VI Translator w telefonie lub na komputerze. Nie zamykaj aplikacji."
  },
  "pt": {
   "enter_code": "Digite este código no VI Translator no seu PC ou celular",
@@ -334,7 +357,8 @@ var STRINGS = {
   "language_tv": "Idioma da TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Prima OK para abrir o menu",
-  "no_hdmi": "Nenhuma entrada HDMI ligada"
+  "no_hdmi": "Nenhuma entrada HDMI ligada",
+  "waiting_source": "Aguardando o VI Translator no seu celular ou PC. Mantenha o app aberto."
  },
  "pt-BR": {
   "enter_code": "Digite este código no VI Translator no seu PC ou celular",
@@ -348,7 +372,8 @@ var STRINGS = {
   "language_tv": "Idioma da TV",
   "input": "Entrada: %1$s",
   "menu_hint": "Pressione OK para abrir o menu",
-  "no_hdmi": "Nenhuma entrada HDMI conectada"
+  "no_hdmi": "Nenhuma entrada HDMI conectada",
+  "waiting_source": "Aguardando o VI Translator no seu celular ou PC. Mantenha o app aberto."
  },
  "ro": {
   "enter_code": "Introdu acest cod în VI Translator pe PC sau telefon",
@@ -362,7 +387,8 @@ var STRINGS = {
   "language_tv": "Limba televizorului",
   "input": "Intrare: %1$s",
   "menu_hint": "Apăsați OK pentru meniu",
-  "no_hdmi": "Nicio intrare HDMI conectată"
+  "no_hdmi": "Nicio intrare HDMI conectată",
+  "waiting_source": "Se așteaptă VI Translator pe telefon sau PC. Ține aplicația deschisă."
  },
  "ru": {
   "enter_code": "Введите этот код в VI Translator на ПК или телефоне",
@@ -376,7 +402,8 @@ var STRINGS = {
   "language_tv": "Язык телевизора",
   "input": "Вход: %1$s",
   "menu_hint": "Нажмите OK, чтобы открыть меню",
-  "no_hdmi": "Нет подключённых входов HDMI"
+  "no_hdmi": "Нет подключённых входов HDMI",
+  "waiting_source": "Ожидание VI Translator на телефоне или ПК. Не закрывайте приложение."
  },
  "sw": {
   "enter_code": "Weka msimbo huu katika VI Translator kwenye kompyuta au simu yako",
@@ -390,7 +417,8 @@ var STRINGS = {
   "language_tv": "Lugha ya TV",
   "input": "Ingizo: %1$s",
   "menu_hint": "Bonyeza OK kwa menyu",
-  "no_hdmi": "Hakuna ingizo la HDMI lililounganishwa"
+  "no_hdmi": "Hakuna ingizo la HDMI lililounganishwa",
+  "waiting_source": "Inasubiri VI Translator kwenye simu au PC yako. Acha programu ikiwa wazi."
  },
  "ta": {
   "enter_code": "உங்கள் கணினி அல்லது ஃபோனில் VI Translator-இல் இந்தக் குறியீட்டை உள்ளிடவும்",
@@ -404,7 +432,8 @@ var STRINGS = {
   "language_tv": "டிவியின் மொழி",
   "input": "உள்ளீடு: %1$s",
   "menu_hint": "மெனுவுக்கு OK அழுத்தவும்",
-  "no_hdmi": "HDMI உள்ளீடு எதுவும் இணைக்கப்படவில்லை"
+  "no_hdmi": "HDMI உள்ளீடு எதுவும் இணைக்கப்படவில்லை",
+  "waiting_source": "உங்கள் ஃபோன் அல்லது PC-யில் VI Translator-க்காகக் காத்திருக்கிறது. ஆப்பைத் திறந்தே வைத்திருங்கள்."
  },
  "te": {
   "enter_code": "మీ PC లేదా ఫోన్‌లో VI Translatorలో ఈ కోడ్‌ను నమోదు చేయండి",
@@ -418,7 +447,8 @@ var STRINGS = {
   "language_tv": "టీవీ భాష",
   "input": "ఇన్‌పుట్: %1$s",
   "menu_hint": "మెనూ కోసం OK నొక్కండి",
-  "no_hdmi": "HDMI ఇన్‌పుట్ ఏదీ కనెక్ట్ కాలేదు"
+  "no_hdmi": "HDMI ఇన్‌పుట్ ఏదీ కనెక్ట్ కాలేదు",
+  "waiting_source": "మీ ఫోన్ లేదా PCలో VI Translator కోసం వేచి ఉంది. యాప్‌ను తెరిచే ఉంచండి."
  },
  "th": {
   "enter_code": "ใส่รหัสนี้ใน VI Translator บนพีซีหรือโทรศัพท์ของคุณ",
@@ -432,7 +462,8 @@ var STRINGS = {
   "language_tv": "ภาษาของทีวี",
   "input": "อินพุต: %1$s",
   "menu_hint": "กด OK เพื่อเปิดเมนู",
-  "no_hdmi": "ไม่มีอินพุต HDMI ที่เชื่อมต่อ"
+  "no_hdmi": "ไม่มีอินพุต HDMI ที่เชื่อมต่อ",
+  "waiting_source": "กำลังรอ VI Translator บนโทรศัพท์หรือพีซีของคุณ เปิดแอปค้างไว้"
  },
  "tl": {
   "enter_code": "Ilagay ang code na ito sa VI Translator sa iyong PC o phone",
@@ -446,7 +477,8 @@ var STRINGS = {
   "language_tv": "Wika ng TV",
   "input": "Input: %1$s",
   "menu_hint": "Pindutin ang OK para sa menu",
-  "no_hdmi": "Walang nakakonektang HDMI input"
+  "no_hdmi": "Walang nakakonektang HDMI input",
+  "waiting_source": "Hinihintay ang VI Translator sa iyong phone o PC. Panatilihing bukas ang app."
  },
  "tr": {
   "enter_code": "Bu kodu bilgisayarınızdaki veya telefonunuzdaki VI Translator'a girin",
@@ -460,7 +492,8 @@ var STRINGS = {
   "language_tv": "Televizyonun dili",
   "input": "Giriş: %1$s",
   "menu_hint": "Menü için OK tuşuna basın",
-  "no_hdmi": "Bağlı HDMI girişi yok"
+  "no_hdmi": "Bağlı HDMI girişi yok",
+  "waiting_source": "Telefonunuzdaki veya bilgisayarınızdaki VI Translator bekleniyor. Uygulamayı açık tutun."
  },
  "uk": {
   "enter_code": "Введіть цей код у VI Translator на ПК або телефоні",
@@ -474,7 +507,8 @@ var STRINGS = {
   "language_tv": "Мова телевізора",
   "input": "Вхід: %1$s",
   "menu_hint": "Натисніть OK, щоб відкрити меню",
-  "no_hdmi": "Немає підключених входів HDMI"
+  "no_hdmi": "Немає підключених входів HDMI",
+  "waiting_source": "Очікування VI Translator на телефоні або ПК. Не закривайте застосунок."
  },
  "ur": {
   "enter_code": "اپنے پی سی یا فون پر VI Translator میں یہ کوڈ درج کریں",
@@ -488,7 +522,8 @@ var STRINGS = {
   "language_tv": "ٹی وی کی زبان",
   "input": "ان پٹ: %1$s",
   "menu_hint": "مینو کے لیے OK دبائیں",
-  "no_hdmi": "کوئی HDMI ان پٹ منسلک نہیں"
+  "no_hdmi": "کوئی HDMI ان پٹ منسلک نہیں",
+  "waiting_source": "آپ کے فون یا PC پر VI Translator کا انتظار ہے۔ ایپ کھلی رکھیں۔"
  },
  "vi": {
   "enter_code": "Nhập mã này trong VI Translator trên PC hoặc điện thoại",
@@ -502,7 +537,8 @@ var STRINGS = {
   "language_tv": "Ngôn ngữ của TV",
   "input": "Đầu vào: %1$s",
   "menu_hint": "Nhấn OK để mở menu",
-  "no_hdmi": "Không có đầu vào HDMI nào được kết nối"
+  "no_hdmi": "Không có đầu vào HDMI nào được kết nối",
+  "waiting_source": "Đang chờ VI Translator trên điện thoại hoặc PC của bạn. Hãy giữ ứng dụng mở."
  },
  "zh-CN": {
   "enter_code": "在电脑或手机上的 VI Translator 中输入此代码",
@@ -516,7 +552,8 @@ var STRINGS = {
   "language_tv": "电视语言",
   "input": "输入源：%1$s",
   "menu_hint": "按 OK 打开菜单",
-  "no_hdmi": "没有已连接的 HDMI 输入源"
+  "no_hdmi": "没有已连接的 HDMI 输入源",
+  "waiting_source": "正在等待手机或电脑上的 VI Translator。请保持应用打开。"
  },
  "zh-HK": {
   "enter_code": "在電腦或手機上的 VI Translator 中輸入此代碼",
@@ -530,7 +567,8 @@ var STRINGS = {
   "language_tv": "電視語言",
   "input": "輸入來源：%1$s",
   "menu_hint": "按 OK 開啟選單",
-  "no_hdmi": "沒有已連接的 HDMI 輸入來源"
+  "no_hdmi": "沒有已連接的 HDMI 輸入來源",
+  "waiting_source": "正在等待手機或電腦上的 VI Translator。請讓應用程式保持開啟。"
  },
  "zh-TW": {
   "enter_code": "在電腦或手機上的 VI Translator 中輸入此代碼",
@@ -544,6 +582,7 @@ var STRINGS = {
   "language_tv": "電視語言",
   "input": "輸入來源：%1$s",
   "menu_hint": "按 OK 開啟選單",
-  "no_hdmi": "沒有已連接的 HDMI 輸入來源"
+  "no_hdmi": "沒有已連接的 HDMI 輸入來源",
+  "waiting_source": "正在等待手機或電腦上的 VI Translator。請讓應用程式保持開啟。"
  }
 };

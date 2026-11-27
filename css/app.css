@@ -280,3 +280,37 @@ body {
   right: auto;
   left: 60px;
 }
+
+/* the PC or phone not answering: a small note at the top, over the game and the screens */
+.source-note {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 5;
+}
+.source-note .note {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  padding: 12px 36px;
+  border-radius: 30px;
+  font-size: 28px;
+  line-height: 1.3;
+  background: rgba(15, 11, 23, 0.88);
+  border: 2px solid rgba(255, 179, 92, 0.6);
+}
+.note-dot {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+  background: var(--warn);
+}
+[dir="rtl"] .note-dot {
+  margin: 0 0 0 20px;
+}
